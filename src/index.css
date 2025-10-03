@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Cozinha das Ilhas Design System - Caribbean meets French elegance */
+
+@layer base {
+  :root {
+    /* Caribbean & French inspired palette */
+    --background: 35 20% 98%;
+    --foreground: 20 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 15% 15%;
+
+    /* Elegant gold primary - Restaurant branding */
+    --primary: 36 45% 73%;
+    --primary-foreground: 20 25% 15%;
+    --primary-light: 36 55% 83%;
+    --primary-dark: 36 35% 63%;
+
+    /* Warm coral secondary - Caribbean warmth */
+    --secondary: 25 65% 65%;
+    --secondary-foreground: 20 25% 25%;
+    --secondary-dark: 22 55% 55%;
+
+    /* Warm brown accent - matches navbar */
+    --accent: 30 25% 45%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 30 35% 65%;
+
+    /* Muted earth tones */
+    --muted: 35 15% 92%;
+    --muted-foreground: 20 10% 45%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 94%;
+    --ring: 30 45% 60%;
+
+    /* Gradients */
+    --gradient-tropical: linear-gradient(135deg, hsl(36 45% 73%), hsl(30 25% 45%));
+    --gradient-sunset: linear-gradient(135deg, hsl(36 55% 83%), hsl(25 65% 65%));
+    --gradient-ocean: linear-gradient(180deg, hsl(36 45% 73%), hsl(36 35% 63%));
+
+    /* Shadows with elegant colors */
+    --shadow-soft: 0 4px 20px hsl(36 30% 45% / 0.15);
+    --shadow-strong: 0 8px 32px hsl(36 40% 35% / 0.25);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 20 25% 8%;
+    --foreground: 35 20% 95%;
+
+    --card: 20 20% 12%;
+    --card-foreground: 35 20% 95%;
+
+    --popover: 20 20% 12%;
+    --popover-foreground: 35 20% 95%;
+
+    --primary: 36 45% 73%;
+    --primary-foreground: 20 25% 8%;
+    --primary-light: 36 55% 83%;
+    --primary-dark: 36 35% 63%;
+
+    --secondary: 25 65% 65%;
+    --secondary-foreground: 20 25% 8%;
+    --secondary-dark: 22 55% 55%;
+
+    --accent: 30 35% 55%;
+    --accent-foreground: 20 25% 8%;
+    --accent-light: 30 45% 75%;
+
+    --muted: 20 15% 15%;
+    --muted-foreground: 35 10% 65%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 35 20% 95%;
+
+    --border: 20 15% 20%;
+    --input: 20 15% 18%;
+    --ring: 30 55% 65%;
+
+    --gradient-tropical: linear-gradient(135deg, hsl(36 45% 73%), hsl(30 35% 55%));
+    --gradient-sunset: linear-gradient(135deg, hsl(36 55% 83%), hsl(25 65% 55%));
+    --gradient-ocean: linear-gradient(180deg, hsl(36 45% 73%), hsl(36 35% 63%));
+
+    --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.25);
+    --shadow-strong: 0 8px 32px hsl(0 0% 0% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    background-image: 
+      radial-gradient(circle at 25px 25px, rgba(212, 165, 116, 0.03) 2%, transparent 0%),
+      radial-gradient(circle at 75px 75px, rgba(138, 85, 80, 0.02) 2%, transparent 0%);
+    background-size: 100px 100px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Tropical animations */
+  .wave-animation {
+    animation: wave 3s ease-in-out infinite;
+  }
+
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+
+  /* Custom gradient backgrounds */
+  .bg-tropical {
+    background: var(--gradient-tropical);
+  }
+
+  .bg-sunset {
+    background: var(--gradient-sunset);
+  }
+
+  .bg-ocean {
+    background: var(--gradient-ocean);
+  }
+
+  /* Elegant shadows */
+  .shadow-tropical {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-tropical-strong {
+    box-shadow: var(--shadow-strong);
+  }
+}
+
+@keyframes wave {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

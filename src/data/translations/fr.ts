@@ -238,17 +238,56 @@ export const fr = {
   // Contact page
   contact: {
     title: 'Contact',
-    subtitle: 'Entrez en contact avec nous',
-    address: 'Adresse',
-    phone: 'Téléphone',
-    email: 'Email',
-    hours: 'Horaires',
-    reservation: 'Réserver',
-    getInTouch: 'Nous Contacter',
-    sendMessage: 'Envoyer un Message',
-    name: 'Nom',
-    message: 'Message',
-    send: 'Envoyer'
+    subtitle: 'Entrez en contact avec nous pour des réservations ou des informations',
+    location: {
+      title: 'Localisation',
+      viewMap: 'Voir sur la Carte'
+    },
+    phone: {
+      title: 'Téléphone',
+      description: 'Appels et SMS',
+      callNow: 'Appeler Maintenant'
+    },
+    email: {
+      title: 'Email',
+      description: 'Réponse sous 24h'
+    },
+    whatsapp: {
+      title: 'WhatsApp',
+      description: 'Le moyen le plus rapide de faire des réservations ou de poser des questions. Réponse immédiate pendant les heures d\'ouverture.',
+      sendMessage: 'Envoyer un Message'
+    },
+    glovo: {
+      title: 'Livraison Glovo',
+      description: 'Vous ne pouvez pas venir ? Nous livrons nos saveurs directement chez vous.'
+    },
+    hours: {
+      title: 'Horaires d\'Ouverture',
+      weekdays: 'Jours de Semaine',
+      monday: 'Lundi',
+      tuesday: 'Mardi',
+      wednesday: 'Mercredi',
+      thursday: 'Jeudi',
+      friday: 'Vendredi',
+      saturday: 'Samedi',
+      sunday: 'Dimanche',
+      closed: 'Fermé'
+    },
+    services: {
+      title: 'Services',
+      breakfast: {
+        title: 'Petit Déjeuner',
+        description: 'Croissants, café, jus frais et pâtisseries françaises'
+      },
+      lunch: {
+        title: 'Déjeuner',
+        description: 'Plats de la Martinique, spécialités antillaises'
+      },
+      pastry: {
+        title: 'Pâtisserie',
+        description: 'Desserts français, gâteaux et spécialités artisanales'
+      }
+    }
   },
 
   // Menu completo page

@@ -243,17 +243,56 @@ export const en = {
   // Contact page
   contact: {
     title: 'Contact',
-    subtitle: 'Get in touch with us',
-    address: 'Address',
-    phone: 'Phone',
-    email: 'Email',
-    hours: 'Opening Hours',
-    reservation: 'Make a Reservation',
-    getInTouch: 'Get in Touch',
-    sendMessage: 'Send Message',
-    name: 'Name',
-    message: 'Message',
-    send: 'Send'
+    subtitle: 'Get in touch with us for reservations or information',
+    location: {
+      title: 'Location',
+      viewMap: 'View on Map'
+    },
+    phone: {
+      title: 'Phone',
+      description: 'Calls and SMS',
+      callNow: 'Call Now'
+    },
+    email: {
+      title: 'Email',
+      description: 'Response within 24h'
+    },
+    whatsapp: {
+      title: 'WhatsApp',
+      description: 'The fastest way to make reservations or ask questions. Immediate response during business hours.',
+      sendMessage: 'Send Message'
+    },
+    glovo: {
+      title: 'Glovo Delivery',
+      description: 'Can\'t come to us? We deliver our flavours directly to your home.'
+    },
+    hours: {
+      title: 'Opening Hours',
+      weekdays: 'Weekdays',
+      monday: 'Monday',
+      tuesday: 'Tuesday',
+      wednesday: 'Wednesday',
+      thursday: 'Thursday',
+      friday: 'Friday',
+      saturday: 'Saturday',
+      sunday: 'Sunday',
+      closed: 'Closed'
+    },
+    services: {
+      title: 'Services',
+      breakfast: {
+        title: 'Breakfast',
+        description: 'Croissants, coffee, fresh juices and French pastries'
+      },
+      lunch: {
+        title: 'Lunch',
+        description: 'Martinique dishes, Caribbean specialties'
+      },
+      pastry: {
+        title: 'Pastry',
+        description: 'French desserts, cakes and artisan specialties'
+      }
+    }
   },
 
   // Menu completo page

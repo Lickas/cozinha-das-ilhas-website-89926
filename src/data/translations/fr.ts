@@ -129,7 +129,7 @@ export const fr = {
     whatToExpect: 'À Quoi Vous Attendre',
     whatToExpectDescription: 'Préparez-vous pour une expérience unique avec des vues imprenables, une ambiance sophistiquée et des événements exclusifs au cœur de Faro.',
     views: 'Vue Panoramique',
-    viewsDesc: 'Profitez d'une vue imprenable sur la ville de Faro',
+    viewsDesc: 'Profitez d\'une vue imprenable sur la ville de Faro',
     ambiance: 'Ambiance Unique',
     ambianceDesc: 'Une atmosphère sophistiquée et détendue en plein air',
     events: 'Événements Spéciaux',

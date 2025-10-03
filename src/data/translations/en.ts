@@ -123,7 +123,11 @@ export const en = {
     title: 'Cuisine des Îles Rooftop',
     subtitle: 'Coming Soon - Spring/Summer 2025',
     description: 'A unique gastronomic experience with panoramic views over Faro',
+    spring2026: 'Spring/Summer 2026',
+    comingSoon: 'Coming Soon',
+    openingEstimate: 'Estimated Opening',
     whatToExpect: 'What to Expect',
+    whatToExpectDescription: 'Get ready for a unique experience with stunning views, sophisticated ambiance and exclusive events in the heart of Faro.',
     views: 'Panoramic View',
     viewsDesc: 'Enjoy a stunning view over the city of Faro',
     ambiance: 'Unique Ambiance',
@@ -135,7 +139,8 @@ export const en = {
     contactUs: 'Contact Us',
     followInstagram: 'Follow us on Instagram',
     privateEvents: 'Private Events',
-    privateEventsDesc: 'Interested in private events? Contact us'
+    privateEventsDesc: 'Interested in private events? Contact us',
+    learnMore: 'Learn More'
   },
 
   // Events page

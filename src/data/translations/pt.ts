@@ -124,7 +124,11 @@ lunch: {
     title: 'Rooftop Cozinha das Ilhas',
     subtitle: 'Em Breve - Primavera/Verão 2025',
     description: 'Uma experiência gastronómica única com vista panorâmica sobre Faro',
+    spring2026: 'Primavera/Verão 2026',
+    comingSoon: 'Em Breve',
+    openingEstimate: 'Previsão de Abertura',
     whatToExpect: 'O Que Esperar',
+    whatToExpectDescription: 'Prepare-se para uma experiência única com vistas deslumbrantes, ambiente sofisticado e eventos exclusivos no coração de Faro.',
     views: 'Vista Panorâmica',
     viewsDesc: 'Desfrute de uma vista deslumbrante sobre a cidade de Faro',
     ambiance: 'Ambiente Único',
@@ -136,7 +140,8 @@ lunch: {
     contactUs: 'Contacte-nos',
     followInstagram: 'Siga no Instagram',
     privateEvents: 'Eventos Privados',
-    privateEventsDesc: 'Interessado em eventos privados? Contacte-nos'
+    privateEventsDesc: 'Interessado em eventos privados? Contacte-nos',
+    learnMore: 'Saber Mais'
   },
 
   // Menu completo page

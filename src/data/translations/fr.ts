@@ -111,11 +111,38 @@ export const fr = {
     title: 'Pâtisserie',
     subtitle: 'Laissez-vous tenter par nos créations sucrées artisanales',
     sectionTitle: 'Douces Traditions',
-    description: 'Chaque dessert est une œuvre d’art, préparé avec des ingrédients soigneusement sélectionnés et des techniques traditionnelles.',
+    description: 'Chaque dessert est une œuvre d\'art, préparé avec des ingrédients soigneusement sélectionnés et des techniques traditionnelles.',
     cakes: 'Gâteaux',
     tarts: 'Tartes',
     cookies: 'Biscuits',
-    seasonal: 'Spécialités Saisonnières'
+    seasonal: 'Spécialités Saisonnières',
+    glutenFree: 'Produits Sans Gluten',
+    glutenFreeDescription: 'Nous proposons une sélection spéciale de produits sans gluten, garantissant que tout le monde puisse profiter de nos délices sans souci.',
+    glutenFreeCertified: 'Certifié Sans Gluten',
+    glutenFreeItems: {
+      cakes: 'Gâteaux et tartes sans gluten',
+      bread: 'Pains artisanaux spéciaux',
+      cookies: 'Biscuits et cookies',
+      traditional: 'Desserts traditionnels adaptés'
+    },
+    homemadeFrenchDesserts: 'Desserts Français Faits Maison'
+  },
+
+  pastryPage: {
+    title: 'Pâtisserie',
+    subtitle: 'Délectez-vous de notre sélection de douceurs et de plats salés artisanaux, préparés quotidiennement avec des ingrédients de première qualité.',
+    sectionTitle: 'Tradition et Saveur à Chaque Bouchée',
+    description: 'Dans notre pâtisserie, chaque produit est une œuvre d\'art culinaire, combinant techniques traditionnelles et ingrédients frais de qualité supérieure.',
+    glutenFree: 'Produits Sans Gluten',
+    glutenFreeDescription: 'Nous proposons une sélection spéciale de produits sans gluten, garantissant que tout le monde puisse profiter de nos délices sans souci.',
+    glutenFreeCertified: 'Certifié Sans Gluten',
+    glutenFreeItems: {
+      cakes: 'Gâteaux et tartes sans gluten',
+      bread: 'Pains artisanaux spéciaux',
+      cookies: 'Biscuits et cookies',
+      traditional: 'Desserts traditionnels adaptés'
+    },
+    homemadeFrenchDesserts: 'Desserts Français Faits Maison'
   },
 
   // Rooftop page

@@ -115,7 +115,34 @@ export const en = {
     cakes: 'Cakes',
     tarts: 'Tarts',
     cookies: 'Biscuits',
-    seasonal: 'Seasonal Specialities'
+    seasonal: 'Seasonal Specialities',
+    glutenFree: 'Gluten-Free Products',
+    glutenFreeDescription: 'We offer a special selection of gluten-free products, ensuring everyone can enjoy our delights worry-free.',
+    glutenFreeCertified: 'Gluten-Free Certified',
+    glutenFreeItems: {
+      cakes: 'Gluten-free cakes and tarts',
+      bread: 'Special artisan breads',
+      cookies: 'Cookies and biscuits',
+      traditional: 'Adapted traditional desserts'
+    },
+    homemadeFrenchDesserts: 'Homemade French Desserts'
+  },
+
+  pastryPage: {
+    title: 'Pastry',
+    subtitle: 'Delight in our selection of artisanal sweets and savouries, prepared daily with top-quality ingredients.',
+    sectionTitle: 'Tradition and Flavour in Every Bite',
+    description: 'In our pastry shop, each product is a culinary work of art, combining traditional techniques with fresh, high-quality ingredients.',
+    glutenFree: 'Gluten-Free Products',
+    glutenFreeDescription: 'We offer a special selection of gluten-free products, ensuring everyone can enjoy our delights worry-free.',
+    glutenFreeCertified: 'Gluten-Free Certified',
+    glutenFreeItems: {
+      cakes: 'Gluten-free cakes and tarts',
+      bread: 'Special artisan breads',
+      cookies: 'Cookies and biscuits',
+      traditional: 'Adapted traditional desserts'
+    },
+    homemadeFrenchDesserts: 'Homemade French Desserts'
   },
 
   // Rooftop page

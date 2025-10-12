@@ -355,6 +355,41 @@ const MenuCompleto = () => {
                     </div>
                   </div>
 
+                  {/* Bokit Burgers */}
+                  <div>
+                    <h4 className="text-lg font-semibold mb-4">{t('menu.lunch.fastFood.bokitBurger.title')}</h4>
+                    <div className="grid gap-4 md:grid-cols-2">
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.fastFood.bokitBurger.items.baconFrango.name')}</h5>
+                          <p className="text-sm text-muted-foreground">{t('menu.lunch.fastFood.bokitBurger.items.baconFrango.description')}</p>
+                          <p className="text-sm font-bold text-primary">€11.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.fastFood.bokitBurger.items.beefQueijo.name')}</h5>
+                          <p className="text-sm text-muted-foreground">{t('menu.lunch.fastFood.bokitBurger.items.beefQueijo.description')}</p>
+                          <p className="text-sm font-bold text-primary">€10.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.fastFood.bokitBurger.items.camaraoAbacate.name')}</h5>
+                          <p className="text-sm text-muted-foreground">{t('menu.lunch.fastFood.bokitBurger.items.camaraoAbacate.description')}</p>
+                          <p className="text-sm font-bold text-primary">€10.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.fastFood.bokitBurger.items.bacalhauCreola.name')}</h5>
+                          <p className="text-sm text-muted-foreground">{t('menu.lunch.fastFood.bokitBurger.items.bacalhauCreola.description')}</p>
+                          <p className="text-sm font-bold text-primary">€10.50</p>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </div>
+
                   {/* Salads */}
                   <div>
                     <h4 className="text-lg font-semibold mb-4">{t('menu.lunch.salads.title')}</h4>
@@ -378,6 +413,173 @@ const MenuCompleto = () => {
                           <h5 className="font-medium">{t('menu.lunch.salads.items.salmaoFumado.name')}</h5>
                           <p className="text-sm text-muted-foreground">{t('menu.lunch.salads.items.salmaoFumado.description')}</p>
                           <p className="text-sm font-bold text-primary">€12.50</p>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </div>
+
+                  {/* Club Sandwiches */}
+                  <div>
+                    <h4 className="text-lg font-semibold mb-4">{t('menu.lunch.clubSandwiches.title')}</h4>
+                    <div className="grid gap-4 md:grid-cols-2">
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.clubSandwiches.items.baconFrango.name')}</h5>
+                          <p className="text-sm text-muted-foreground">{t('menu.lunch.clubSandwiches.items.baconFrango.description')}</p>
+                          <p className="text-sm font-bold text-primary">€10.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.clubSandwiches.items.atumOvo.name')}</h5>
+                          <p className="text-sm text-muted-foreground">{t('menu.lunch.clubSandwiches.items.atumOvo.description')}</p>
+                          <p className="text-sm font-bold text-primary">€10.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.clubSandwiches.items.fiambreQueijo.name')}</h5>
+                          <p className="text-sm text-muted-foreground">{t('menu.lunch.clubSandwiches.items.fiambreQueijo.description')}</p>
+                          <p className="text-sm font-bold text-primary">€10.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.clubSandwiches.items.salmaoMozza.name')}</h5>
+                          <p className="text-sm text-muted-foreground">{t('menu.lunch.clubSandwiches.items.salmaoMozza.description')}</p>
+                          <p className="text-sm font-bold text-primary">€10.50</p>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </div>
+
+                  {/* Paninis/Tostas */}
+                  <div>
+                    <h4 className="text-lg font-semibold mb-4">{t('menu.lunch.toasts.title')}</h4>
+                    <div className="grid gap-4 md:grid-cols-3">
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.toasts.items.frango.name')}</h5>
+                          <p className="text-sm text-muted-foreground">{t('menu.lunch.toasts.items.frango.description')}</p>
+                          <p className="text-sm font-bold text-primary">€6.00</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.toasts.items.bacon.name')}</h5>
+                          <p className="text-sm text-muted-foreground">{t('menu.lunch.toasts.items.bacon.description')}</p>
+                          <p className="text-sm font-bold text-primary">€6.00</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.toasts.items.veggy.name')}</h5>
+                          <p className="text-sm text-muted-foreground">{t('menu.lunch.toasts.items.veggy.description')}</p>
+                          <p className="text-sm font-bold text-primary">€6.00</p>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </div>
+
+                  {/* Omelettes */}
+                  <div>
+                    <h4 className="text-lg font-semibold mb-4">{t('menu.lunch.omelettes.title')}</h4>
+                    <div className="grid gap-4 md:grid-cols-2">
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.omelettes.items.fiambreQueijo.name')}</h5>
+                          <p className="text-sm text-muted-foreground">{t('menu.lunch.omelettes.items.fiambreQueijo.description')}</p>
+                          <p className="text-sm font-bold text-primary">€10.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.omelettes.items.baconAbacate.name')}</h5>
+                          <p className="text-sm text-muted-foreground">{t('menu.lunch.omelettes.items.baconAbacate.description')}</p>
+                          <p className="text-sm font-bold text-primary">€11.50</p>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </div>
+
+                  {/* Quiche */}
+                  <div>
+                    <h4 className="text-lg font-semibold mb-4">{t('menu.lunch.quiche.title')}</h4>
+                    <div className="grid gap-4 md:grid-cols-2">
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.quiche.items.lorena.name')}</h5>
+                          <p className="text-sm text-muted-foreground">{t('menu.lunch.quiche.items.lorena.description')}</p>
+                          <p className="text-sm font-bold text-primary">€10.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.quiche.items.queijoCabra.name')}</h5>
+                          <p className="text-sm text-muted-foreground">{t('menu.lunch.quiche.items.queijoCabra.description')}</p>
+                          <p className="text-sm font-bold text-primary">€10.50</p>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </div>
+
+                  {/* Baguette Sandwiches */}
+                  <div>
+                    <h4 className="text-lg font-semibold mb-4">{t('menu.lunch.baguetteSandwiches.title')}</h4>
+                    <div className="grid gap-4 md:grid-cols-2">
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.baguetteSandwiches.items.fiambreQueijoButter')}</h5>
+                          <p className="text-sm font-bold text-primary">€5.00</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.baguetteSandwiches.items.fiambreQueijoMaio')}</h5>
+                          <p className="text-sm font-bold text-primary">€6.00</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.baguetteSandwiches.items.frango')}</h5>
+                          <p className="text-sm font-bold text-primary">€6.00</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.baguetteSandwiches.items.tunaOvo')}</h5>
+                          <p className="text-sm font-bold text-primary">€6.00</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.baguetteSandwiches.items.salmaoAvocado')}</h5>
+                          <p className="text-sm font-bold text-primary">€7.00</p>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </div>
+
+                  {/* Desserts */}
+                  <div>
+                    <h4 className="text-lg font-semibold mb-4">{t('menu.lunch.desserts.title')}</h4>
+                    <div className="grid gap-4 md:grid-cols-3">
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.desserts.items.espressoNata')}</h5>
+                          <p className="text-sm font-bold text-primary">€2.00</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.desserts.items.babaRum')}</h5>
+                          <p className="text-sm font-bold text-primary">€3.10</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.lunch.desserts.items.saladaFrutas')}</h5>
+                          <p className="text-sm font-bold text-primary">€4.50</p>
                         </CardContent>
                       </Card>
                     </div>

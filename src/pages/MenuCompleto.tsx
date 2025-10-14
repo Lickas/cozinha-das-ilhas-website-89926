@@ -143,6 +143,12 @@ const MenuCompleto = () => {
                           <p className="text-sm font-bold text-primary">€2.50</p>
                         </CardContent>
                       </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.viennoiseries.items.croissantJam')}</h5>
+                          <p className="text-sm font-bold text-primary">€3.00</p>
+                        </CardContent>
+                      </Card>
                     </div>
                   </div>
 
@@ -245,6 +251,101 @@ const MenuCompleto = () => {
                     </div>
                   </div>
 
+                  {/* Snacks */}
+                  <div>
+                    <h4 className="text-lg font-semibold mb-4">{t('menu.breakfast.snacks.title')}</h4>
+                    <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.snacks.items.plainOmelette')}</h5>
+                          <p className="text-sm font-bold text-primary">€4.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.snacks.items.omelettebacon')}</h5>
+                          <p className="text-sm font-bold text-primary">€6.00</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.snacks.items.omeletteBaconAvocado')}</h5>
+                          <p className="text-sm font-bold text-primary">€7.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.snacks.items.omeletteeMixt')}</h5>
+                          <p className="text-sm font-bold text-primary">€10.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.snacks.items.clubSandwich')}</h5>
+                          <p className="text-sm font-bold text-primary">€6.00</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.snacks.items.frenchFries')}</h5>
+                          <p className="text-sm font-bold text-primary">€3.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.snacks.items.spicySweetPotatoes')}</h5>
+                          <p className="text-sm font-bold text-primary">€4.00</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.snacks.items.toastEggSalmon')}</h5>
+                          <p className="text-sm font-bold text-primary">€8.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.snacks.items.toastMozzarella')}</h5>
+                          <p className="text-sm font-bold text-primary">€6.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.snacks.items.toastScrambled')}</h5>
+                          <p className="text-sm font-bold text-primary">€8.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.snacks.items.croissantHamCheese')}</h5>
+                          <p className="text-sm font-bold text-primary">€3.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.snacks.items.croissantHamCheeseVeg')}</h5>
+                          <p className="text-sm font-bold text-primary">€4.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.snacks.items.yogurtFruits')}</h5>
+                          <p className="text-sm font-bold text-primary">€4.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.snacks.items.fruitsSalad')}</h5>
+                          <p className="text-sm font-bold text-primary">€3.50</p>
+                        </CardContent>
+                      </Card>
+                    </div>
+                    <div className="mt-4 text-sm text-muted-foreground">
+                      <p>{t('menu.breakfast.snacks.addIngredients1')}</p>
+                      <p>{t('menu.breakfast.snacks.addIngredients2')}</p>
+                    </div>
+                  </div>
+
                   {/* Hot Drinks */}
                   <div>
                     <h4 className="text-lg font-semibold mb-4">{t('menu.breakfast.hotDrinks.title')}</h4>
@@ -257,8 +358,38 @@ const MenuCompleto = () => {
                       </Card>
                       <Card>
                         <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.espressoMacchiato')}</h5>
+                          <p className="text-sm font-bold text-primary">€1.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
                           <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.americano')}</h5>
                           <p className="text-sm font-bold text-primary">€1.80</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.americanoStrong')}</h5>
+                          <p className="text-sm font-bold text-primary">€2.30</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.espressoDuplo')}</h5>
+                          <p className="text-sm font-bold text-primary">€2.00</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.flatWhite')}</h5>
+                          <p className="text-sm font-bold text-primary">€2.80</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.latteMacchiato')}</h5>
+                          <p className="text-sm font-bold text-primary">€2.50</p>
                         </CardContent>
                       </Card>
                       <Card>
@@ -269,8 +400,86 @@ const MenuCompleto = () => {
                       </Card>
                       <Card>
                         <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.cafeViennois')}</h5>
+                          <p className="text-sm font-bold text-primary">€3.00</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.irishCoffee')}</h5>
+                          <p className="text-sm font-bold text-primary">€6.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.latteBaileys')}</h5>
+                          <p className="text-sm font-bold text-primary">€5.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.latteCaramel')}</h5>
+                          <p className="text-sm font-bold text-primary">€3.80</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.capuccinoChantilly')}</h5>
+                          <p className="text-sm font-bold text-primary">€4.00</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
                           <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.hotChocolate')}</h5>
                           <p className="text-sm font-bold text-primary">€3.80</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.cinnamonTea')}</h5>
+                          <p className="text-sm font-bold text-primary">€3.20</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.variousTeas')}</h5>
+                          <p className="text-sm font-bold text-primary">€2.00</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.goldenMilk')}</h5>
+                          <p className="text-sm font-bold text-primary">€3.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.latteHotChocolate')}</h5>
+                          <p className="text-sm font-bold text-primary">€2.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.hotMilk')}</h5>
+                          <p className="text-sm font-bold text-primary">€1.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.capuccinoOat')}</h5>
+                          <p className="text-sm font-bold text-primary">€3.50</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.iceCoffee')}</h5>
+                          <p className="text-sm font-bold text-primary">€3.00</p>
+                        </CardContent>
+                      </Card>
+                      <Card>
+                        <CardContent className="p-4">
+                          <h5 className="font-medium">{t('menu.breakfast.hotDrinks.items.iceCoffeeMilk')}</h5>
+                          <p className="text-sm font-bold text-primary">€3.50</p>
                         </CardContent>
                       </Card>
                     </div>
@@ -327,28 +536,28 @@ const MenuCompleto = () => {
                       <Card>
                         <CardContent className="p-4">
                           <h5 className="font-medium">{t('menu.lunch.mains.items.espetadaFrango.name')}</h5>
-                          <p className="text-sm text-muted-foreground">{t('menu.lunch.mains.items.espetadaFrango.description')}</p>
+                          <p className="text-sm text-muted-foreground">Servido com batatas doces fritas receita “Cajun” e salada mista</p>
                           <p className="text-sm font-bold text-primary">€14.00</p>
                         </CardContent>
                       </Card>
                       <Card>
                         <CardContent className="p-4">
                           <h5 className="font-medium">{t('menu.lunch.mains.items.costeletasPorco.name')}</h5>
-                          <p className="text-sm text-muted-foreground">{t('menu.lunch.mains.items.costeletasPorco.description')}</p>
+                          <p className="text-sm text-muted-foreground">Com batatas fritas e salada mista</p>
                           <p className="text-sm font-bold text-primary">€12.50</p>
                         </CardContent>
                       </Card>
                       <Card>
                         <CardContent className="p-4">
                           <h5 className="font-medium">{t('menu.lunch.mains.items.dauradaPlancha.name')}</h5>
-                          <p className="text-sm text-muted-foreground">{t('menu.lunch.mains.items.dauradaPlancha.description')}</p>
+                          <p className="text-sm text-muted-foreground">Servido com batatas fritas, arroz e salada</p>
                           <p className="text-sm font-bold text-primary">€15.00</p>
                         </CardContent>
                       </Card>
                       <Card>
                         <CardContent className="p-4">
                           <h5 className="font-medium">{t('menu.lunch.mains.items.espetadaCamarao.name')}</h5>
-                          <p className="text-sm text-muted-foreground">{t('menu.lunch.mains.items.espetadaCamarao.description')}</p>
+                          <p className="text-sm text-muted-foreground">Servido com arroz e legumes e salada mista</p>
                           <p className="text-sm font-bold text-primary">€15.00</p>
                         </CardContent>
                       </Card>
@@ -397,7 +606,7 @@ const MenuCompleto = () => {
                       <Card>
                         <CardContent className="p-4">
                           <h5 className="font-medium">{t('menu.lunch.salads.items.frango.name')}</h5>
-                          <p className="text-sm text-muted-foreground">{t('menu.lunch.salads.items.frango.description')}</p>
+                          <p className="text-sm text-muted-foreground">Batavia, tomate, cebola, queijo, cenoura & molho de mostarda</p>
                           <p className="text-sm font-bold text-primary">€11.50</p>
                         </CardContent>
                       </Card>
@@ -439,7 +648,7 @@ const MenuCompleto = () => {
                       <Card>
                         <CardContent className="p-4">
                           <h5 className="font-medium">{t('menu.lunch.clubSandwiches.items.fiambreQueijo.name')}</h5>
-                          <p className="text-sm text-muted-foreground">{t('menu.lunch.clubSandwiches.items.fiambreQueijo.description')}</p>
+                          <p className="text-sm text-muted-foreground">Batavia, tomate, cebola, cheddar, cogumelos & maionese</p>
                           <p className="text-sm font-bold text-primary">€10.50</p>
                         </CardContent>
                       </Card>
@@ -474,7 +683,7 @@ const MenuCompleto = () => {
                       <Card>
                         <CardContent className="p-4">
                           <h5 className="font-medium">{t('menu.lunch.toasts.items.veggy.name')}</h5>
-                          <p className="text-sm text-muted-foreground">{t('menu.lunch.toasts.items.veggy.description')}</p>
+                          <p className="text-sm text-muted-foreground">Curgete grelhada, cogumelos, tomate e queijo em uma baguete torrada</p>
                           <p className="text-sm font-bold text-primary">€6.00</p>
                         </CardContent>
                       </Card>
@@ -509,14 +718,7 @@ const MenuCompleto = () => {
                       <Card>
                         <CardContent className="p-4">
                           <h5 className="font-medium">{t('menu.lunch.quiche.items.lorena.name')}</h5>
-                          <p className="text-sm text-muted-foreground">{t('menu.lunch.quiche.items.lorena.description')}</p>
-                          <p className="text-sm font-bold text-primary">€10.50</p>
-                        </CardContent>
-                      </Card>
-                      <Card>
-                        <CardContent className="p-4">
-                          <h5 className="font-medium">{t('menu.lunch.quiche.items.queijoCabra.name')}</h5>
-                          <p className="text-sm text-muted-foreground">{t('menu.lunch.quiche.items.queijoCabra.description')}</p>
+                          <p className="text-sm text-muted-foreground">Salmão Queijo Cabra - Cebola (Servido com batatas fritas e salada mista)</p>
                           <p className="text-sm font-bold text-primary">€10.50</p>
                         </CardContent>
                       </Card>
@@ -605,6 +807,18 @@ const MenuCompleto = () => {
                   <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                     <Card>
                       <CardContent className="p-4">
+                        <h5 className="font-medium">{t('menu.frenchDesserts.items.religieuse')}</h5>
+                        <p className="text-sm font-bold text-primary">€4.50</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent className="p-4">
+                        <h5 className="font-medium">{t('menu.frenchDesserts.items.tarteletteMorangos')}</h5>
+                        <p className="text-sm font-bold text-primary">€4.50</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent className="p-4">
                         <h5 className="font-medium">{t('menu.frenchDesserts.items.millefeuille')}</h5>
                         <p className="text-sm font-bold text-primary">€4.50</p>
                       </CardContent>
@@ -655,6 +869,12 @@ const MenuCompleto = () => {
                       <CardContent className="p-4">
                         <h5 className="font-medium">{t('menu.frenchDesserts.items.babaRum')}</h5>
                         <p className="text-sm font-bold text-primary">€4.50</p>
+                      </CardContent>
+                    </Card>
+                    <Card>
+                      <CardContent className="p-4">
+                        <h5 className="font-medium">{t('menu.frenchDesserts.items.tarteMaca')}</h5>
+                        <p className="text-sm font-bold text-primary">€4.00</p>
                       </CardContent>
                     </Card>
                   </div>

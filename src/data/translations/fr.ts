@@ -19,7 +19,12 @@ export const fr = {
       subtitle: 'Une expérience gastronomique unique à Faro',
       description: 'Découvrez les saveurs authentiques des îles dans une atmosphère chaleureuse et élégante. Notre cuisine allie traditions culinaires et ingrédients frais et locaux.',
       reserveButton: 'Réserver',
-      menuButton: 'Voir le Menu'
+      menuButton: 'Voir le Menu',
+      festiveNotice: {
+        message: 'Événements et offres de Noël vous attendent',
+        cta: 'Voir les offres festives',
+        scrollLabel: 'Faites défiler pour découvrir nos événements festifs'
+      }
     },
     festive: {
       title: 'Offres Festives de Fin d’Année',
@@ -61,6 +66,11 @@ export const fr = {
           apple: 'Galette aux pommes',
           flexible: 'Option aux pommes ou sans garniture'
         }
+      },
+      atmosphere: {
+        decor: 'Décor scintillant, épices et parfums de Noël',
+        music: 'Musique de saison pour accueillir vos invités',
+        toast: 'Idées de bulles et toasts pour vos célébrations'
       },
       gourmandises: {
         title: 'Foie Gras, Chocolats & Petits Fours',

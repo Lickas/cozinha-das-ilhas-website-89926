@@ -1,4 +1,4 @@
-import { ChefHat, Coffee, Cake, MapPin, Clock, Star, ChevronDown, Gift, Crown, Candy, Wine } from "lucide-react";
+import { ChefHat, Coffee, Cake, MapPin, Clock, Star, ChevronDown, Gift, Crown, Candy, Wine, Snowflake, Music2, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -87,6 +87,27 @@ const Home = () => {
     },
   ];
 
+  const festiveHighlights = [
+    {
+      icon: Snowflake,
+      label: t("home.festive.atmosphere.decor"),
+      accent: "from-amber-100 to-amber-50",
+    },
+    {
+      icon: Music2,
+      label: t("home.festive.atmosphere.music"),
+      accent: "from-primary/10 to-primary/5",
+    },
+    {
+      icon: Sparkles,
+      label: t("home.festive.atmosphere.toast"),
+      accent: "from-secondary/15 to-secondary/5",
+    },
+  ];
+
+  const scrollToFestive = () =>
+    document.getElementById("festive-offers")?.scrollIntoView({ behavior: "smooth" });
+
   return (
     <>
       <SEOHead 
@@ -107,6 +128,22 @@ const Home = () => {
         <div className="absolute inset-0 bg-black/40 backdrop-blur-[6px]"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-secondary/20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-center mb-8">
+            <div className="flex flex-wrap items-center gap-3 rounded-2xl bg-white/10 border border-white/15 px-4 py-3 backdrop-blur text-white shadow-tropical">
+              <div className="flex items-center gap-2">
+                <Snowflake className="h-5 w-5 text-amber-200" />
+                <span className="font-medium">{t("home.hero.festiveNotice.message")}</span>
+              </div>
+              <Button
+                size="sm"
+                variant="secondary"
+                className="bg-white text-primary hover:bg-white/90"
+                onClick={scrollToFestive}
+              >
+                {t("home.hero.festiveNotice.cta")}
+              </Button>
+            </div>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 fade-in-up text-white">
               <div className="space-y-6">
@@ -186,18 +223,19 @@ const Home = () => {
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <button
-            onClick={() => document.getElementById('specialties')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={scrollToFestive}
             className="flex flex-col items-center text-white/80 hover:text-white transition-colors group"
-            aria-label="Scroll para ver mais"
+            aria-label={t("home.hero.festiveNotice.scrollLabel")}
           >
-            <span className="text-sm mb-2 group-hover:text-primary transition-colors">Veja mais</span>
+            <span className="text-sm mb-2 group-hover:text-primary transition-colors">{t("home.hero.festiveNotice.scrollLabel")}</span>
             <ChevronDown className="h-6 w-6 group-hover:text-primary transition-colors" />
           </button>
         </div>
       </header>
 
       {showFestiveOffers && (
-        <section className="py-16 bg-amber-50/70 border-y border-amber-100/70">
+        <section id="festive-offers" className="py-16 bg-amber-50/70 border-y border-amber-100/70 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(251,191,36,0.12),transparent_35%),radial-gradient(circle_at_80%_10%,rgba(251,146,60,0.12),transparent_32%)] pointer-events-none" />
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div className="space-y-3">
@@ -210,7 +248,7 @@ const Home = () => {
                 <p className="text-muted-foreground max-w-3xl text-base">
                   {t('home.festive.subtitle')}
                 </p>
-                <div className="inline-flex items-center gap-2 bg-white/80 px-4 py-3 rounded-xl border border-amber-100 text-sm text-amber-900 shadow-sm">
+                <div className="inline-flex items-center gap-2 bg-white/85 px-4 py-3 rounded-xl border border-amber-100 text-sm text-amber-900 shadow-sm">
                   <Clock className="h-4 w-4 text-amber-700" />
                   <span>{t('home.festive.contact')}</span>
                 </div>
@@ -223,6 +261,26 @@ const Home = () => {
                   <Link to="/contactos">{t('home.festive.cta')}</Link>
                 </Button>
               </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {festiveHighlights.map((highlight, index) => {
+                const Icon = highlight.icon;
+                return (
+                  <div
+                    key={`${highlight.label}-${index}`}
+                    className={`relative overflow-hidden rounded-2xl border border-amber-100/80 bg-gradient-to-br ${highlight.accent} shadow-sm`}
+                  >
+                    <div className="absolute inset-0 bg-white/60 backdrop-blur-sm" />
+                    <div className="relative flex items-center gap-3 p-4">
+                      <span className="inline-flex items-center justify-center rounded-full bg-white shadow px-3 py-2 text-primary">
+                        <Icon className="h-4 w-4" />
+                      </span>
+                      <p className="text-sm font-medium text-foreground">{highlight.label}</p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">

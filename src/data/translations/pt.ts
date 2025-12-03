@@ -20,7 +20,12 @@ export const pt = {
       subtitle: 'Uma experiência gastronómica única em Faro',
       description: 'Descubra os sabores autênticos das ilhas numa atmosfera acolhedora e elegante. A nossa cozinha combina tradições culinárias com ingredientes frescos e locais.',
       reserveButton: 'Fazer Reserva',
-      menuButton: 'Ver Menu'
+      menuButton: 'Ver Menu',
+      festiveNotice: {
+        message: 'Temos eventos e ofertas natalícias à sua espera',
+        cta: 'Ver ofertas festivas',
+        scrollLabel: 'Deslize para descobrir os eventos festivos'
+      }
     },
     festive: {
       title: 'Especialidades de Fim de Ano',
@@ -62,6 +67,11 @@ export const pt = {
           apple: 'Galette aux pommes',
           flexible: 'Opção com maçã ou sem recheio'
         }
+      },
+      atmosphere: {
+        decor: 'Decoração cintilante, especiarias e aromas natalícios',
+        music: 'Música da época para receber os convidados',
+        toast: 'Sugestões de brindes e espumantes para celebrar'
       },
       gourmandises: {
         title: 'Foie Gras, Chocolates & Petits Fours',

@@ -19,7 +19,70 @@ export const en = {
       subtitle: 'A unique gastronomic experience in Faro',
       description: 'Discover the authentic flavours of the islands in a warm and elegant atmosphere. Our cuisine blends culinary traditions with fresh, local ingredients.',
       reserveButton: 'Make a Reservation',
-      menuButton: 'View Menu'
+      menuButton: 'View Menu',
+      festiveNotice: {
+        message: 'Festive season events and specials are waiting for you',
+        cta: 'See the festive offers',
+        scrollLabel: 'Scroll to discover our festive events'
+      }
+    },
+    festive: {
+      title: 'Year-End Festive Specials',
+      subtitle: 'Order the seasonal creations we prepared for your celebrations through 31 December.',
+      deadline: 'Available to order until 31/12.',
+      contact: 'Orders and information: +351 911 75 90 10 · R. Conselheiro Bivar 36, Faro.',
+      cta: 'Talk with us',
+      buches: {
+        title: 'Bûches de Noël',
+        description: 'A selection of artisanal Yule logs with buttercreams, mousses and classic French recipes.',
+        items: {
+          butterCream: 'Buttercream: vanilla, chocolate, praliné, coffee or Grand Marnier',
+          passion: 'Passion fruit/raspberry mousse',
+          pear: 'Pear/caramel mousse',
+          royal: 'Bûche Royal Chocolat',
+          blackForest: 'Bûche Forêt Noire',
+          raspberry: 'Bûche Framboisier',
+          chestnut: 'Bûche aux marrons'
+        },
+        prices: {
+          individual: '1 person: €3.30',
+          small: '5/6 people: €19',
+          large: '8/10 people: €29'
+        }
+      },
+      galette: {
+        title: 'Galette des Rois',
+        description: 'Available with almond cream filling, classic dry dough or apple options to share.',
+        prices: {
+          one: '1 person: €3',
+          three: '3 people: €10',
+          five: '4/5 people: €16',
+          eight: '6/8 people: €22',
+          ten: '10 people: €26'
+        },
+        variants: {
+          almond: 'Filled galette with crème d’amande',
+          dry: 'Galette sèche',
+          apple: 'Galette aux pommes',
+          flexible: 'Apple option or without filling'
+        }
+      },
+      gourmandises: {
+        title: 'Foie Gras, Chocolates & Petits Fours',
+        description: 'Artisanal bites to complete your festive table.',
+        items: {
+          foie: 'Foie gras with Port wine: €8 / 100g',
+          truffles: 'Rum truffles: €5.50 / 100g',
+          orangettes: 'Orangettes: €5.50 / 100g',
+          petitsFours: 'Sweet or savoury petits fours: €1 each or €12 per tray of 12',
+          breads: 'Breads & brioches: walnut & raisin bread, pain de mie toast, milk bread, multigrain bread'
+        }
+      },
+      tasting: {
+        title: 'Christmas Cake',
+        description: 'Free tasting of our Christmas cake creations.',
+        details: 'Friday, 12 December, from 14:00 to 18:00.'
+      }
     },
     about: {
       title: 'Our Story',

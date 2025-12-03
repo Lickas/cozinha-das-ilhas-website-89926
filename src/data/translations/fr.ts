@@ -19,7 +19,70 @@ export const fr = {
       subtitle: 'Une expérience gastronomique unique à Faro',
       description: 'Découvrez les saveurs authentiques des îles dans une atmosphère chaleureuse et élégante. Notre cuisine allie traditions culinaires et ingrédients frais et locaux.',
       reserveButton: 'Réserver',
-      menuButton: 'Voir le Menu'
+      menuButton: 'Voir le Menu',
+      festiveNotice: {
+        message: 'Événements et offres de Noël vous attendent',
+        cta: 'Voir les offres festives',
+        scrollLabel: 'Faites défiler pour découvrir nos événements festifs'
+      }
+    },
+    festive: {
+      title: 'Offres Festives de Fin d’Année',
+      subtitle: 'Commandez nos créations saisonnières pour vos fêtes jusqu’au 31 décembre.',
+      deadline: 'Disponible à la commande jusqu’au 31/12.',
+      contact: 'Commandes et informations : +351 911 75 90 10 · R. Conselheiro Bivar 36, Faro.',
+      cta: 'Nous contacter',
+      buches: {
+        title: 'Bûches de Noël',
+        description: 'Une sélection de bûches artisanales : crèmes au beurre, mousses et recettes françaises classiques.',
+        items: {
+          butterCream: 'Crème au beurre : vanille, chocolat, praliné, café ou Grand-Marnier',
+          passion: 'Mousse passion/framboise',
+          pear: 'Mousse poire/caramel',
+          royal: 'Bûche Royal Chocolat',
+          blackForest: 'Bûche Forêt Noire',
+          raspberry: 'Bûche Framboisier',
+          chestnut: 'Bûche aux marrons'
+        },
+        prices: {
+          individual: '1 personne : 3,30€',
+          small: '5/6 personnes : 19€',
+          large: '8/10 personnes : 29€'
+        }
+      },
+      galette: {
+        title: 'Galette des Rois',
+        description: 'Proposée à la crème d’amande, en version sèche ou aux pommes, idéale à partager.',
+        prices: {
+          one: '1 personne : 3€',
+          three: '3 personnes : 10€',
+          five: '4/5 personnes : 16€',
+          eight: '6/8 personnes : 22€',
+          ten: '10 personnes : 26€'
+        },
+        variants: {
+          almond: 'Galette fourrée à la crème d’amande',
+          dry: 'Galette sèche',
+          apple: 'Galette aux pommes',
+          flexible: 'Option aux pommes ou sans garniture'
+        }
+      },
+      gourmandises: {
+        title: 'Foie Gras, Chocolats & Petits Fours',
+        description: 'Des gourmandises artisanales pour sublimer votre table de fête.',
+        items: {
+          foie: 'Foie gras au Porto : 8€ / 100g',
+          truffles: 'Truffes au rhum : 5,50€ / 100g',
+          orangettes: 'Orangettes : 5,50€ / 100g',
+          petitsFours: 'Petits fours sucrés ou salés : 1€ / pièce ou 12€ le plateau de 12',
+          breads: 'Pains & brioches : pain noix et raisins, pain de mie toast, pain de lait, pain aux céréales'
+        }
+      },
+      tasting: {
+        title: 'Christmas Cake',
+        description: 'Dégustation gratuite de nos créations de cake de Noël.',
+        details: 'Vendredi 12 décembre, de 14h à 18h.'
+      }
     },
     about: {
       title: 'Notre Histoire',

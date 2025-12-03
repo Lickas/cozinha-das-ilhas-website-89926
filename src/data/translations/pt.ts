@@ -68,11 +68,6 @@ export const pt = {
           flexible: 'Opção com maçã ou sem recheio'
         }
       },
-      atmosphere: {
-        decor: 'Bolas e enfeites de Natal cintilantes a decorar o espaço',
-        music: 'Um Pai Natal simpático a receber os convidados com mimos',
-        toast: 'Cenário gelado com flocos de neve e brilho de gelo ao fundo'
-      },
       gourmandises: {
         title: 'Foie Gras, Chocolates & Petits Fours',
         description: 'Sabores artesanais para completar a sua mesa festiva.',

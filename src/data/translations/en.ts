@@ -67,11 +67,6 @@ export const en = {
           flexible: 'Apple option or without filling'
         }
       },
-      atmosphere: {
-        decor: 'Shimmering baubles and ornaments dressing up the room',
-        music: 'A cheerful Santa welcome with sweet little surprises',
-        toast: 'Frosted backdrops with snowflakes and icy sparkle'
-      },
       gourmandises: {
         title: 'Foie Gras, Chocolates & Petits Fours',
         description: 'Artisanal bites to complete your festive table.',

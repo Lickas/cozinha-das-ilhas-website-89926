@@ -67,11 +67,6 @@ export const fr = {
           flexible: 'Option aux pommes ou sans garniture'
         }
       },
-      atmosphere: {
-        decor: 'Boules et ornements scintillants qui habillent la salle',
-        music: 'Un Père Noël chaleureux qui accueille avec des douceurs',
-        toast: 'Décor givré avec flocons et éclats de glace en toile de fond'
-      },
       gourmandises: {
         title: 'Foie Gras, Chocolats & Petits Fours',
         description: 'Des gourmandises artisanales pour sublimer votre table de fête.',

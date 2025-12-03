@@ -1,4 +1,4 @@
-import { ChefHat, Coffee, Cake, MapPin, Clock, Star, ChevronDown, Gift, Crown, Candy, Wine, Snowflake, Sparkles } from "lucide-react";
+import { ChefHat, Coffee, Cake, MapPin, Clock, Star, ChevronDown, Gift, Crown, Candy, Wine } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -84,24 +84,6 @@ const Home = () => {
       description: t('home.festive.tasting.description'),
       items: [t('home.festive.tasting.details')],
       prices: [],
-    },
-  ];
-
-  const festiveHighlights = [
-    {
-      icon: Sparkles,
-      label: t("home.festive.atmosphere.decor"),
-      accent: "from-amber-100 to-primary/10",
-    },
-    {
-      icon: Gift,
-      label: t("home.festive.atmosphere.music"),
-      accent: "from-rose-50 to-amber-50",
-    },
-    {
-      icon: Snowflake,
-      label: t("home.festive.atmosphere.toast"),
-      accent: "from-blue-50 to-amber-50/70",
     },
   ];
 
@@ -267,27 +249,6 @@ const Home = () => {
                   <Link to="/contactos">{t('home.festive.cta')}</Link>
                 </Button>
               </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {festiveHighlights.map((highlight, index) => {
-                const Icon = highlight.icon;
-                return (
-                  <div
-                    key={`${highlight.label}-${index}`}
-                    className={`relative overflow-hidden rounded-2xl border border-amber-100/80 bg-gradient-to-br ${highlight.accent} shadow-lg shadow-amber-100/60`}
-                  >
-                    <div className="absolute inset-0 bg-white/70 backdrop-blur-sm" />
-                    <div className="absolute -right-8 -top-10 h-24 w-24 rounded-full bg-white/60 blur-2xl" />
-                    <div className="relative flex items-center gap-3 p-5">
-                      <span className="inline-flex items-center justify-center rounded-full bg-gradient-to-br from-white to-amber-50 shadow px-3 py-2 text-primary ring-1 ring-amber-100">
-                        <Icon className="h-5 w-5" />
-                      </span>
-                      <p className="text-sm font-semibold text-foreground leading-snug">{highlight.label}</p>
-                    </div>
-                  </div>
-                );
-              })}
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">

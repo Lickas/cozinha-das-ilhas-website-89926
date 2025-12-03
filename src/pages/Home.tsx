@@ -1,4 +1,4 @@
-import { ChefHat, Coffee, Cake, MapPin, Clock, Star, ChevronDown, Gift, Crown, Candy, Wine } from "lucide-react";
+import { ChefHat, Coffee, Cake, MapPin, Clock, Star, ChevronDown, Gift, Crown, Candy, Wine, Snowflake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";

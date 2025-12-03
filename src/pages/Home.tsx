@@ -17,8 +17,7 @@ const Home = () => {
   const servicesRef = useStaggeredScrollAnimation(150);
   const ctaRef = useScrollAnimation();
 
-  const festiveCutoffDate = new Date('2024-12-31T23:59:59');
-  const showFestiveOffers = new Date() <= festiveCutoffDate;
+  const showFestiveOffers = true;
 
   const festiveCards = [
     {

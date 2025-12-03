@@ -24,7 +24,7 @@ export const fr = {
     festive: {
       title: 'Offres Festives de Fin d’Année',
       subtitle: 'Commandez nos créations saisonnières pour vos fêtes jusqu’au 31 décembre.',
-      deadline: 'Ces offres disparaissent automatiquement du site après le 31/12.',
+      deadline: 'Disponible à la commande jusqu’au 31/12.',
       contact: 'Commandes et informations : +351 911 75 90 10 · R. Conselheiro Bivar 36, Faro.',
       cta: 'Nous contacter',
       buches: {

@@ -25,7 +25,7 @@ export const pt = {
     festive: {
       title: 'Especialidades de Fim de Ano',
       subtitle: 'Encomende as criações festivas que preparámos para celebrar até 31 de dezembro.',
-      deadline: 'Estas ofertas desaparecem automaticamente do site após 31/12.',
+      deadline: 'Disponível para encomendas até 31/12.',
       contact: 'Encomendas e informações: +351 911 75 90 10 · R. Conselheiro Bivar 36, Faro.',
       cta: 'Falar connosco',
       buches: {

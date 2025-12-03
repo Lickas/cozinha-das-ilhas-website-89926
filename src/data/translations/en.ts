@@ -24,7 +24,7 @@ export const en = {
     festive: {
       title: 'Year-End Festive Specials',
       subtitle: 'Order the seasonal creations we prepared for your celebrations through 31 December.',
-      deadline: 'These offers are automatically removed from the site after 31/12.',
+      deadline: 'Available to order until 31/12.',
       contact: 'Orders and information: +351 911 75 90 10 · R. Conselheiro Bivar 36, Faro.',
       cta: 'Talk with us',
       buches: {

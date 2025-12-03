@@ -1,5 +1,6 @@
-import { ChefHat, Coffee, Cake, MapPin, Clock, Star, ChevronDown } from "lucide-react";
+import { ChefHat, Coffee, Cake, MapPin, Clock, Star, ChevronDown, Gift, Crown, Candy, Wine } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import ReservationForm from "@/components/ReservationForm";
@@ -15,6 +16,77 @@ const Home = () => {
   const cardGridRef = useStaggeredScrollAnimation(200);
   const servicesRef = useStaggeredScrollAnimation(150);
   const ctaRef = useScrollAnimation();
+
+  const festiveCutoffDate = new Date('2024-12-31T23:59:59');
+  const showFestiveOffers = new Date() <= festiveCutoffDate;
+
+  const festiveCards = [
+    {
+      key: 'buches',
+      icon: Gift,
+      accent: 'text-primary bg-primary/10',
+      title: t('home.festive.buches.title'),
+      description: t('home.festive.buches.description'),
+      items: [
+        t('home.festive.buches.items.butterCream'),
+        t('home.festive.buches.items.passion'),
+        t('home.festive.buches.items.pear'),
+        t('home.festive.buches.items.royal'),
+        t('home.festive.buches.items.blackForest'),
+        t('home.festive.buches.items.raspberry'),
+        t('home.festive.buches.items.chestnut'),
+      ],
+      prices: [
+        t('home.festive.buches.prices.individual'),
+        t('home.festive.buches.prices.small'),
+        t('home.festive.buches.prices.large'),
+      ],
+    },
+    {
+      key: 'galette',
+      icon: Crown,
+      accent: 'text-secondary-dark bg-secondary/10',
+      title: t('home.festive.galette.title'),
+      description: t('home.festive.galette.description'),
+      items: [
+        t('home.festive.galette.variants.almond'),
+        t('home.festive.galette.variants.dry'),
+        t('home.festive.galette.variants.apple'),
+        t('home.festive.galette.variants.flexible'),
+      ],
+      prices: [
+        t('home.festive.galette.prices.one'),
+        t('home.festive.galette.prices.three'),
+        t('home.festive.galette.prices.five'),
+        t('home.festive.galette.prices.eight'),
+        t('home.festive.galette.prices.ten'),
+      ],
+    },
+    {
+      key: 'gourmandises',
+      icon: Candy,
+      accent: 'text-amber-700 bg-amber-100/60',
+      title: t('home.festive.gourmandises.title'),
+      description: t('home.festive.gourmandises.description'),
+      items: [
+        t('home.festive.gourmandises.items.foie'),
+        t('home.festive.gourmandises.items.truffles'),
+        t('home.festive.gourmandises.items.orangettes'),
+        t('home.festive.gourmandises.items.petitsFours'),
+        t('home.festive.gourmandises.items.breads'),
+      ],
+      prices: [],
+    },
+    {
+      key: 'tasting',
+      icon: Wine,
+      accent: 'text-accent bg-accent/10',
+      title: t('home.festive.tasting.title'),
+      description: t('home.festive.tasting.description'),
+      items: [t('home.festive.tasting.details')],
+      prices: [],
+    },
+  ];
 
   return (
     <>
@@ -124,6 +196,82 @@ const Home = () => {
           </button>
         </div>
       </header>
+
+      {showFestiveOffers && (
+        <section className="py-16 bg-amber-50/70 border-y border-amber-100/70">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+              <div className="space-y-3">
+                <p className="text-sm font-semibold text-amber-700 uppercase tracking-[0.08em]">
+                  {t('home.festive.deadline')}
+                </p>
+                <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
+                  {t('home.festive.title')}
+                </h2>
+                <p className="text-muted-foreground max-w-3xl text-base">
+                  {t('home.festive.subtitle')}
+                </p>
+                <div className="inline-flex items-center gap-2 bg-white/80 px-4 py-3 rounded-xl border border-amber-100 text-sm text-amber-900 shadow-sm">
+                  <Clock className="h-4 w-4 text-amber-700" />
+                  <span>{t('home.festive.contact')}</span>
+                </div>
+              </div>
+              <div className="flex flex-wrap items-center gap-3">
+                <Badge className="bg-primary/10 text-primary border-primary/30">
+                  {t('home.festive.deadline')}
+                </Badge>
+                <Button asChild className="bg-primary text-white hover:bg-primary-dark">
+                  <Link to="/contactos">{t('home.festive.cta')}</Link>
+                </Button>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+              {festiveCards.map((card) => {
+                const Icon = card.icon;
+                return (
+                  <Card key={card.key} className="h-full border-amber-100 shadow-tropical/30 shadow-sm">
+                    <CardContent className="p-6 space-y-4">
+                      <div className="flex items-start gap-3">
+                        <div className={`p-2 rounded-full ${card.accent}`}>
+                          <Icon className="h-5 w-5" />
+                        </div>
+                        <div>
+                          <h3 className="font-display text-xl font-semibold text-foreground">{card.title}</h3>
+                          <p className="text-sm text-muted-foreground">{card.description}</p>
+                        </div>
+                      </div>
+
+                      <div className="space-y-2">
+                        {card.items.map((item) => (
+                          <div key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
+                            <span className="mt-1 h-1.5 w-1.5 rounded-full bg-amber-500" />
+                            <span>{item}</span>
+                          </div>
+                        ))}
+                      </div>
+
+                      {card.prices.length > 0 && (
+                        <div className="flex flex-wrap gap-2">
+                          {card.prices.map((price) => (
+                            <Badge
+                              key={price}
+                              variant="secondary"
+                              className="bg-white text-foreground border border-amber-100 shadow-sm"
+                            >
+                              {price}
+                            </Badge>
+                          ))}
+                        </div>
+                      )}
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* About Our Specialties */}
       <section ref={specialtiesRef} id="specialties" className="py-20">

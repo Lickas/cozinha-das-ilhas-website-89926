@@ -22,6 +22,64 @@ export const pt = {
       reserveButton: 'Fazer Reserva',
       menuButton: 'Ver Menu'
     },
+    festive: {
+      title: 'Especialidades de Fim de Ano',
+      subtitle: 'Encomende as criações festivas que preparámos para celebrar até 31 de dezembro.',
+      deadline: 'Estas ofertas desaparecem automaticamente do site após 31/12.',
+      contact: 'Encomendas e informações: +351 911 75 90 10 · R. Conselheiro Bivar 36, Faro.',
+      cta: 'Falar connosco',
+      buches: {
+        title: 'Bûches de Noël',
+        description: 'Seleção de troncos natalícios artesanais com cremes de manteiga, mousses e receitas clássicas francesas.',
+        items: {
+          butterCream: 'Crème au beurre: baunilha, chocolate, praliné, café ou Grand-Marnier',
+          passion: 'Mousse maracujá/framboesa',
+          pear: 'Mousse pêra/caramelo',
+          royal: 'Bûche Royal Chocolat',
+          blackForest: 'Bûche Forêt Noire',
+          raspberry: 'Bûche Framboisier',
+          chestnut: 'Bûche aux marrons'
+        },
+        prices: {
+          individual: '1 pessoa: 3,30€',
+          small: '5/6 pessoas: 19€',
+          large: '8/10 pessoas: 29€'
+        }
+      },
+      galette: {
+        title: 'Galette des Rois',
+        description: 'Disponível com recheio de creme de amêndoa, massa seca ou versões com maçã, para partilhar em família.',
+        prices: {
+          one: '1 pessoa: 3€',
+          three: '3 pessoas: 10€',
+          five: '4/5 pessoas: 16€',
+          eight: '6/8 pessoas: 22€',
+          ten: '10 pessoas: 26€'
+        },
+        variants: {
+          almond: 'Galette recheada com crème d’amande',
+          dry: 'Galette sèche',
+          apple: 'Galette aux pommes',
+          flexible: 'Opção com maçã ou sem recheio'
+        }
+      },
+      gourmandises: {
+        title: 'Foie Gras, Chocolates & Petits Fours',
+        description: 'Sabores artesanais para completar a sua mesa festiva.',
+        items: {
+          foie: 'Foie gras ao Porto: 8€ / 100g',
+          truffles: 'Trufas ao rum: 5,50€ / 100g',
+          orangettes: 'Orangettes: 5,50€ / 100g',
+          petitsFours: 'Petits fours doces ou salgados: 1€ / peça ou 12€ o tabuleiro de 12',
+          breads: 'Pães & brioches: pão com nozes e passas, pão de mie toast, pão de leite, pão com cereais'
+        }
+      },
+      tasting: {
+        title: 'Christmas Cake',
+        description: 'Degustação gratuita das nossas criações de bolo de Natal.',
+        details: 'Sexta-feira, 12 de dezembro, das 14h às 18h.'
+      }
+    },
     about: {
       title: 'A Nossa História',
       description: 'No Cozinha das Ilhas, celebramos a rica herança culinária das ilhas tropicais. Cada prato conta uma história, cada sabor transporta-o para uma viagem única através dos oceanos.',

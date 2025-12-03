@@ -1,4 +1,4 @@
-import { ChefHat, Coffee, Cake, MapPin, Clock, Star, ChevronDown, Gift, Crown, Candy, Wine, Snowflake, Music2, Sparkles } from "lucide-react";
+import { ChefHat, Coffee, Cake, MapPin, Clock, Star, ChevronDown, Gift, Crown, Candy, Wine, Snowflake, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -89,19 +89,19 @@ const Home = () => {
 
   const festiveHighlights = [
     {
-      icon: Snowflake,
-      label: t("home.festive.atmosphere.decor"),
-      accent: "from-amber-100 to-amber-50",
-    },
-    {
-      icon: Music2,
-      label: t("home.festive.atmosphere.music"),
-      accent: "from-primary/10 to-primary/5",
-    },
-    {
       icon: Sparkles,
+      label: t("home.festive.atmosphere.decor"),
+      accent: "from-amber-100 to-primary/10",
+    },
+    {
+      icon: Gift,
+      label: t("home.festive.atmosphere.music"),
+      accent: "from-rose-50 to-amber-50",
+    },
+    {
+      icon: Snowflake,
       label: t("home.festive.atmosphere.toast"),
-      accent: "from-secondary/15 to-secondary/5",
+      accent: "from-blue-50 to-amber-50/70",
     },
   ];
 
@@ -234,8 +234,14 @@ const Home = () => {
       </header>
 
       {showFestiveOffers && (
-        <section id="festive-offers" className="py-16 bg-amber-50/70 border-y border-amber-100/70 relative overflow-hidden">
+        <section
+          id="festive-offers"
+          className="py-16 bg-gradient-to-b from-amber-50 via-white to-blue-50/60 border-y border-amber-100/70 relative overflow-hidden"
+        >
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(251,191,36,0.12),transparent_35%),radial-gradient(circle_at_80%_10%,rgba(251,146,60,0.12),transparent_32%)] pointer-events-none" />
+          <div className="absolute -top-12 -left-10 h-48 w-48 rounded-full bg-gradient-to-br from-primary/15 to-amber-100 blur-3xl opacity-70" />
+          <div className="absolute -bottom-16 -right-10 h-56 w-56 rounded-full bg-gradient-to-tr from-blue-100/70 to-white blur-3xl opacity-80" />
+          <div className="absolute inset-x-0 bottom-0 h-32 bg-[radial-gradient(circle_at_20%_100%,rgba(59,130,246,0.12),transparent_35%),radial-gradient(circle_at_80%_120%,rgba(255,255,255,0.9),transparent_28%)] pointer-events-none" />
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div className="space-y-3">
@@ -269,14 +275,15 @@ const Home = () => {
                 return (
                   <div
                     key={`${highlight.label}-${index}`}
-                    className={`relative overflow-hidden rounded-2xl border border-amber-100/80 bg-gradient-to-br ${highlight.accent} shadow-sm`}
+                    className={`relative overflow-hidden rounded-2xl border border-amber-100/80 bg-gradient-to-br ${highlight.accent} shadow-lg shadow-amber-100/60`}
                   >
-                    <div className="absolute inset-0 bg-white/60 backdrop-blur-sm" />
-                    <div className="relative flex items-center gap-3 p-4">
-                      <span className="inline-flex items-center justify-center rounded-full bg-white shadow px-3 py-2 text-primary">
-                        <Icon className="h-4 w-4" />
+                    <div className="absolute inset-0 bg-white/70 backdrop-blur-sm" />
+                    <div className="absolute -right-8 -top-10 h-24 w-24 rounded-full bg-white/60 blur-2xl" />
+                    <div className="relative flex items-center gap-3 p-5">
+                      <span className="inline-flex items-center justify-center rounded-full bg-gradient-to-br from-white to-amber-50 shadow px-3 py-2 text-primary ring-1 ring-amber-100">
+                        <Icon className="h-5 w-5" />
                       </span>
-                      <p className="text-sm font-medium text-foreground">{highlight.label}</p>
+                      <p className="text-sm font-semibold text-foreground leading-snug">{highlight.label}</p>
                     </div>
                   </div>
                 );

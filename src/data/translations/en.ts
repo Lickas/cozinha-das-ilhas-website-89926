@@ -68,9 +68,9 @@ export const en = {
         }
       },
       atmosphere: {
-        decor: 'Twinkling décor, warm spices and holiday aromas',
-        music: 'Seasonal music to welcome your guests',
-        toast: 'Sparkling toast suggestions for your celebrations'
+        decor: 'Shimmering baubles and ornaments dressing up the room',
+        music: 'A cheerful Santa welcome with sweet little surprises',
+        toast: 'Frosted backdrops with snowflakes and icy sparkle'
       },
       gourmandises: {
         title: 'Foie Gras, Chocolates & Petits Fours',

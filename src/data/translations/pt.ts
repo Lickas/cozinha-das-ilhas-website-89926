@@ -69,9 +69,9 @@ export const pt = {
         }
       },
       atmosphere: {
-        decor: 'Decoração cintilante, especiarias e aromas natalícios',
-        music: 'Música da época para receber os convidados',
-        toast: 'Sugestões de brindes e espumantes para celebrar'
+        decor: 'Bolas e enfeites de Natal cintilantes a decorar o espaço',
+        music: 'Um Pai Natal simpático a receber os convidados com mimos',
+        toast: 'Cenário gelado com flocos de neve e brilho de gelo ao fundo'
       },
       gourmandises: {
         title: 'Foie Gras, Chocolates & Petits Fours',

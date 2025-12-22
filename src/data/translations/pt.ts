@@ -6,6 +6,7 @@ export const pt = {
     breakfast: 'Pequeno Almoço',
     lunch: 'Almoço', 
     pastry: 'Pastelaria',
+    gallery: 'Galeria',
     rooftop: 'Rooftop',
     events: 'Eventos',
     about: 'Sobre Nós',
@@ -216,6 +217,104 @@ lunch: {
     lunch: 'Almoço',
     pastry: 'Pastelaria',
     drinks: 'Bebidas'
+  },
+
+  // Gallery page
+  gallery: {
+    title: 'Galeria',
+    subtitle: 'Momentos, pratos e detalhes do nosso espaço',
+    description: 'Já começámos a publicar as primeiras fotografias dos pratos e da esplanada. Mais imagens vão chegar em breve!',
+    inProgress: {
+      title: 'Atualização contínua',
+      heading: 'Novas fotos estão a chegar',
+      description: 'Publicámos as primeiras imagens dos pratos e do espaço, e vamos continuar a acrescentar mais.',
+      note: 'Cada foto de prato está ligada ao respetivo item do menu.',
+      badge: 'Sempre a atualizar'
+    },
+    sectionsTitle: 'O que pode ver',
+    sectionsDescription: 'A galeria está organizada por tema para facilitar a navegação e encontrar rapidamente o que procura.',
+    sections: {
+      restaurant: {
+        title: 'Restaurante & Terraço',
+        description: 'Ambiente da sala, esplanada e detalhes de decoração.'
+      },
+      dishes: {
+        title: 'Pratos do Menu',
+        description: 'Fotografias dos pratos principais com a indicação correspondente no menu.'
+      },
+      pastry: {
+        title: 'Pastelaria',
+        description: 'Doces, bolos e viennoiseries artesanais saídos do nosso forno.'
+      },
+      events: {
+        title: 'Momentos & Eventos',
+        description: 'Registos de eventos privados, degustações e celebrações no restaurante.'
+      }
+    },
+    workflowTitle: 'Próximos passos',
+    workflowDescription: 'Processo preparado para receber, organizar e publicar as fotografias.',
+    workflow: {
+      collect: {
+        title: 'Receber as fotos',
+        description: 'Partilhe connosco os ficheiros e, se possível, as legendas ou nomes dos pratos correspondentes.'
+      },
+      organize: {
+        title: 'Organizar e descrever',
+        description: 'Iremos publicar as imagens na galeria com descrições claras para cada secção.'
+      },
+      linkMenu: {
+        title: 'Associar ao menu',
+        description: 'Para cada prato, adicionaremos a foto no menu correspondente para uma experiência completa.'
+      }
+    },
+    cta: {
+      title: 'Quer adiantar algum detalhe?',
+      description: 'Envie-nos as fotos ou indicações de como gostaria que aparecessem na galeria e no menu.',
+      contact: 'Contactar agora',
+      instagram: 'Ver Instagram'
+    },
+    liveSection: {
+      title: 'Primeiras fotos disponíveis',
+      description: 'Uma amostra dos pratos e da esplanada. Clique para ir diretamente ao prato no menu.',
+      moreComing: 'Mais imagens em breve'
+    },
+    tags: {
+      dishes: 'Pratos',
+      pastry: 'Pastelaria',
+      restaurant: 'Espaço'
+    },
+    menuLabel: 'No menu',
+    viewMenuItem: 'Ver prato no menu',
+    photos: {
+      assiette: {
+        title: 'Assiette créole',
+        description: 'Bolinhos de bacalhau, tomate, abacate e saladas coloridas com pão de queijo.',
+        menuItem: 'Salada Créola',
+        alt: 'Prato de assiette créole com acras, tomate, abacate e saladas variadas'
+      },
+      dourada: {
+        title: 'Dourada à plancha com banana',
+        description: 'Filete grelhado servido com banana caramelizada e arroz basmati.',
+        menuItem: 'Daurada a Plancha',
+        alt: 'Dourada grelhada com molho de banana, arroz e rodelas de banana caramelizada'
+      },
+      pastel: {
+        title: 'Pastel da casa com café',
+        description: 'Pastel de nata artesanal acompanhado por café expresso.',
+        menuItem: 'Espresso + Pastel Nata',
+        alt: 'Dois cafés e pastéis de nata servidos em tabuleiro de madeira'
+      },
+      pastryDisplay: {
+        title: 'Vitrine de pastelaria',
+        description: 'Seleção diária de tartes, éclairs, macarons e outras especialidades francesas.',
+        alt: 'Montra refrigerada cheia de macarons, tartes de fruta, éclairs e bolos franceses'
+      },
+      terrace: {
+        title: 'Esplanada na rua Conselheiro Bivar',
+        description: 'Mesas exteriores com vista para o centro de Faro.',
+        alt: 'Esplanada com mesas e guarda-sóis na rua pedonal em Faro'
+      }
+    }
   },
 
   // Footer

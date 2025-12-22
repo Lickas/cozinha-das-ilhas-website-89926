@@ -5,6 +5,7 @@ export const en = {
     breakfast: 'Breakfast',
     lunch: 'Lunch',
     pastry: 'Pastry',
+    gallery: 'Gallery',
     rooftop: 'Rooftop',
     events: 'Events',
     about: 'About Us',
@@ -394,6 +395,104 @@ export const en = {
     lunch: 'Lunch',
     pastry: 'Pastry',
     drinks: 'Drinks'
+  },
+
+  // Gallery page
+  gallery: {
+    title: 'Gallery',
+    subtitle: 'A curated look at our dishes, space and special moments',
+    description: 'We have published the first photos of our dishes and terrace. More images are on the way.',
+    inProgress: {
+      title: 'Rolling updates',
+      heading: 'New photos are arriving',
+      description: 'We have shared the first dishes and terrace views, and will keep adding more.',
+      note: 'Each dish photo is linked to its matching menu item.',
+      badge: 'Frequently updated'
+    },
+    sectionsTitle: 'What you can explore',
+    sectionsDescription: 'The gallery is organized by theme so you can quickly find what interests you.',
+    sections: {
+      restaurant: {
+        title: 'Restaurant & Terrace',
+        description: 'Atmosphere of the dining room, terrace and décor details.'
+      },
+      dishes: {
+        title: 'Menu Dishes',
+        description: 'Photography of our main dishes with links to the matching menu items.'
+      },
+      pastry: {
+        title: 'Pastry',
+        description: 'Cakes, desserts and artisanal viennoiseries straight from our oven.'
+      },
+      events: {
+        title: 'Moments & Events',
+        description: 'Highlights from private events, tastings and celebrations hosted with us.'
+      }
+    },
+    workflowTitle: 'Next steps',
+    workflowDescription: 'A clear process to receive, organize and publish the photos.',
+    workflow: {
+      collect: {
+        title: 'Receive the photos',
+        description: 'Share the files and, if possible, the captions or dish names that go with each image.'
+      },
+      organize: {
+        title: 'Organize and describe',
+        description: 'We will publish the images in the gallery with clear descriptions for every section.'
+      },
+      linkMenu: {
+        title: 'Attach to the menu',
+        description: 'For each dish, we will add the matching photo to the relevant menu page.'
+      }
+    },
+    cta: {
+      title: 'Want to send details ahead of time?',
+      description: 'Share the photos or guidance on how you would like them to appear in the gallery and in the menu.',
+      contact: 'Send a message',
+      instagram: 'View Instagram'
+    },
+    liveSection: {
+      title: 'First photos now live',
+      description: 'A sample of dishes and our terrace. Click through to jump to the dish in the menu.',
+      moreComing: 'More images coming soon'
+    },
+    tags: {
+      dishes: 'Dishes',
+      pastry: 'Pastry',
+      restaurant: 'Restaurant'
+    },
+    menuLabel: 'On the menu',
+    viewMenuItem: 'View dish on the menu',
+    photos: {
+      assiette: {
+        title: 'Assiette créole',
+        description: 'Codfish fritters with tomato, avocado, and colorful salads with cheese bread.',
+        menuItem: 'Creola Salad',
+        alt: 'Creole platter with cod fritters, tomato, avocado and mixed salads'
+      },
+      dourada: {
+        title: 'Grilled dourada with banana',
+        description: 'Seared fish fillet served with caramelized banana and basmati rice.',
+        menuItem: 'Daurada a Plancha',
+        alt: 'Grilled dourada with banana sauce, rice, and caramelized banana slices'
+      },
+      pastel: {
+        title: 'Pastel de nata with coffee',
+        description: 'House-made custard tart served with espresso.',
+        menuItem: 'Espresso + Pastel Nata',
+        alt: 'Two espressos and custard tarts served on wooden trays'
+      },
+      pastryDisplay: {
+        title: 'Pastry showcase',
+        description: 'Daily selection of tarts, éclairs, macarons and other French specialties.',
+        alt: 'Pastry counter filled with macarons, fruit tarts, éclairs and French cakes'
+      },
+      terrace: {
+        title: 'Terrace on Rua Conselheiro Bivar',
+        description: 'Outdoor tables with a view of downtown Faro.',
+        alt: 'Outdoor terrace with tables and parasols on a pedestrian street in Faro'
+      }
+    }
   },
 
   // Footer

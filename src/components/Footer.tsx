@@ -87,6 +87,9 @@ const Footer = () => {
               >
                 {t('common.orderOnGlovo')}
               </a>
+              <Link to="/galeria" className="block text-sm text-white/70 hover:text-primary transition-colors">
+                {t('nav.gallery')}
+              </Link>
               <Link to="/eventos" className="block text-sm text-white/70 hover:text-primary transition-colors">
                 {t('nav.events')}
               </Link>

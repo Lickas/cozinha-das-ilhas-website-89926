@@ -401,20 +401,20 @@ export const en = {
   gallery: {
     title: 'Gallery',
     subtitle: 'A curated look at our dishes, space and special moments',
-    description: 'We are preparing the updated gallery. As soon as we receive the files, we will organize them here and link each dish photo to its entry in the menu.',
+    description: 'We have published the first photos of our dishes and terrace. More images are on the way.',
     inProgress: {
-      title: 'Preparation',
-      heading: 'The gallery is ready to receive the new photos',
-      description: 'We created this page to centralize every photo of the restaurant, dishes and events.',
-      note: 'Each dish photo will also appear alongside the corresponding menu item.',
-      badge: 'Coming soon'
+      title: 'Rolling updates',
+      heading: 'New photos are arriving',
+      description: 'We have shared the first dishes and terrace views, and will keep adding more.',
+      note: 'Each dish photo is linked to its matching menu item.',
+      badge: 'Frequently updated'
     },
-    sectionsTitle: 'What you will find here',
-    sectionsDescription: 'The gallery will be organized by theme so you can explore each area with ease.',
+    sectionsTitle: 'What you can explore',
+    sectionsDescription: 'The gallery is organized by theme so you can quickly find what interests you.',
     sections: {
       restaurant: {
         title: 'Restaurant & Terrace',
-        description: 'Atmosphere of the dining room, terrace and the décor details of the space.'
+        description: 'Atmosphere of the dining room, terrace and décor details.'
       },
       dishes: {
         title: 'Menu Dishes',
@@ -450,6 +450,48 @@ export const en = {
       description: 'Share the photos or guidance on how you would like them to appear in the gallery and in the menu.',
       contact: 'Send a message',
       instagram: 'View Instagram'
+    },
+    liveSection: {
+      title: 'First photos now live',
+      description: 'A sample of dishes and our terrace. Click through to jump to the dish in the menu.',
+      moreComing: 'More images coming soon'
+    },
+    tags: {
+      dishes: 'Dishes',
+      pastry: 'Pastry',
+      restaurant: 'Restaurant'
+    },
+    menuLabel: 'On the menu',
+    viewMenuItem: 'View dish on the menu',
+    photos: {
+      assiette: {
+        title: 'Assiette créole',
+        description: 'Codfish fritters with tomato, avocado, and colorful salads with cheese bread.',
+        menuItem: 'Creola Salad',
+        alt: 'Creole platter with cod fritters, tomato, avocado and mixed salads'
+      },
+      dourada: {
+        title: 'Grilled dourada with banana',
+        description: 'Seared fish fillet served with caramelized banana and basmati rice.',
+        menuItem: 'Daurada a Plancha',
+        alt: 'Grilled dourada with banana sauce, rice, and caramelized banana slices'
+      },
+      pastel: {
+        title: 'Pastel de nata with coffee',
+        description: 'House-made custard tart served with espresso.',
+        menuItem: 'Espresso + Pastel Nata',
+        alt: 'Two espressos and custard tarts served on wooden trays'
+      },
+      pastryDisplay: {
+        title: 'Pastry showcase',
+        description: 'Daily selection of tarts, éclairs, macarons and other French specialties.',
+        alt: 'Pastry counter filled with macarons, fruit tarts, éclairs and French cakes'
+      },
+      terrace: {
+        title: 'Terrace on Rua Conselheiro Bivar',
+        description: 'Outdoor tables with a view of downtown Faro.',
+        alt: 'Outdoor terrace with tables and parasols on a pedestrian street in Faro'
+      }
     }
   },
 

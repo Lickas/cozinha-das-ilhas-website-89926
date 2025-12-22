@@ -2,6 +2,7 @@ import { Camera, Images, UtensilsCrossed, Cake, Sparkles, Instagram } from "luci
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import SEOHead from "@/components/SEOHead";
 import { breadcrumbStructuredData } from "@/data/structuredData";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -18,6 +19,14 @@ const Galeria = () => {
     { name: "Início", url: "/" },
     { name: t("gallery.title"), url: "/galeria" }
   ]);
+
+  const galleryPhotos = [
+    { key: "assiette", src: "/lovable-uploads/assiette-creole.jpg", category: "dishes", menuHref: "/almoco#salads" },
+    { key: "dourada", src: "/lovable-uploads/2ffd30b9-5693-49d0-9b7c-eecda7e9295c.png", category: "dishes", menuHref: "/almoco#mains" },
+    { key: "pastel", src: "/lovable-uploads/7a8d1814-3f62-4a44-bce9-481a257c68e1.png", category: "pastry", menuHref: "/almoco#desserts" },
+    { key: "pastryDisplay", src: "/lovable-uploads/9a550b9b-b93c-4e88-98b1-ad72439cc276.png", category: "pastry" },
+    { key: "terrace", src: "/lovable-uploads/8462ebc1-2ba2-4fd0-8cce-843ea71b1774.png", category: "restaurant" }
+  ] as const;
 
   const sections = [
     { icon: Images, title: t("gallery.sections.restaurant.title"), description: t("gallery.sections.restaurant.description"), accent: "from-primary/10 to-secondary/10" },
@@ -119,6 +128,66 @@ const Galeria = () => {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Live photos */}
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+                {t("gallery.liveSection.title")}
+              </h2>
+              <p className="text-muted-foreground max-w-3xl mx-auto">
+                {t("gallery.liveSection.description")}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {galleryPhotos.map((photo) => {
+                const title = t(`gallery.photos.${photo.key}.title`);
+                const description = t(`gallery.photos.${photo.key}.description`);
+                const alt = t(`gallery.photos.${photo.key}.alt`);
+                const menuItem = t(`gallery.photos.${photo.key}.menuItem`);
+                const hasMenuItem = !!menuItem && menuItem !== `gallery.photos.${photo.key}.menuItem`;
+
+                return (
+                  <Card key={photo.key} className="shadow-tropical overflow-hidden flex flex-col">
+                    <div className="aspect-[4/3] bg-muted overflow-hidden">
+                      <img 
+                        src={photo.src} 
+                        alt={alt} 
+                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
+                        loading="lazy"
+                      />
+                    </div>
+                    <CardHeader className="flex flex-row items-start justify-between gap-4">
+                      <div className="space-y-1">
+                        <CardTitle className="font-display text-xl">{title}</CardTitle>
+                        <p className="text-sm text-muted-foreground">{description}</p>
+                      </div>
+                      <Badge variant="secondary">{t(`gallery.tags.${photo.category}`)}</Badge>
+                    </CardHeader>
+                    <CardContent className="flex flex-col gap-3 mt-auto">
+                      {hasMenuItem ? (
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                          <div className="text-sm text-muted-foreground">
+                            <span className="font-semibold text-foreground">{t("gallery.menuLabel")}:</span> {menuItem}
+                          </div>
+                          {photo.menuHref && (
+                            <Button asChild size="sm" variant="outline" className="whitespace-nowrap">
+                              <Link to={photo.menuHref}>{t("gallery.viewMenuItem")}</Link>
+                            </Button>
+                          )}
+                        </div>
+                      ) : (
+                        <p className="text-sm text-muted-foreground">{t("gallery.liveSection.moreComing")}</p>
+                      )}
+                    </CardContent>
+                  </Card>
+                );
+              })}
             </div>
           </div>
         </section>

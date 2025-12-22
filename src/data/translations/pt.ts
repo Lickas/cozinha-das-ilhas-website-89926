@@ -222,21 +222,21 @@ lunch: {
   // Gallery page
   gallery: {
     title: 'Galeria',
-    subtitle: 'Uma seleção de momentos, pratos e detalhes do nosso espaço',
-    description: 'Estamos a preparar a nova galeria com as fotografias atualizadas. Assim que enviarmos os ficheiros, iremos organizá-los aqui e associá-los aos pratos correspondentes no menu.',
+    subtitle: 'Momentos, pratos e detalhes do nosso espaço',
+    description: 'Já começámos a publicar as primeiras fotografias dos pratos e da esplanada. Mais imagens vão chegar em breve!',
     inProgress: {
-      title: 'Preparação',
-      heading: 'A galeria está pronta para receber as novas fotos',
-      description: 'Criámos esta página para centralizar todas as imagens do restaurante, pratos e eventos.',
-      note: 'Cada foto de prato será também ligada ao respetivo item do menu.',
-      badge: 'Brevemente disponível'
+      title: 'Atualização contínua',
+      heading: 'Novas fotos estão a chegar',
+      description: 'Publicámos as primeiras imagens dos pratos e do espaço, e vamos continuar a acrescentar mais.',
+      note: 'Cada foto de prato está ligada ao respetivo item do menu.',
+      badge: 'Sempre a atualizar'
     },
-    sectionsTitle: 'O que vai encontrar aqui',
-    sectionsDescription: 'A galeria será organizada por tema para facilitar a navegação e encontrar rapidamente o que procura.',
+    sectionsTitle: 'O que pode ver',
+    sectionsDescription: 'A galeria está organizada por tema para facilitar a navegação e encontrar rapidamente o que procura.',
     sections: {
       restaurant: {
         title: 'Restaurante & Terraço',
-        description: 'Ambiente da sala, esplanada e detalhes de decoração do espaço.'
+        description: 'Ambiente da sala, esplanada e detalhes de decoração.'
       },
       dishes: {
         title: 'Pratos do Menu',
@@ -272,6 +272,48 @@ lunch: {
       description: 'Envie-nos as fotos ou indicações de como gostaria que aparecessem na galeria e no menu.',
       contact: 'Contactar agora',
       instagram: 'Ver Instagram'
+    },
+    liveSection: {
+      title: 'Primeiras fotos disponíveis',
+      description: 'Uma amostra dos pratos e da esplanada. Clique para ir diretamente ao prato no menu.',
+      moreComing: 'Mais imagens em breve'
+    },
+    tags: {
+      dishes: 'Pratos',
+      pastry: 'Pastelaria',
+      restaurant: 'Espaço'
+    },
+    menuLabel: 'No menu',
+    viewMenuItem: 'Ver prato no menu',
+    photos: {
+      assiette: {
+        title: 'Assiette créole',
+        description: 'Bolinhos de bacalhau, tomate, abacate e saladas coloridas com pão de queijo.',
+        menuItem: 'Salada Créola',
+        alt: 'Prato de assiette créole com acras, tomate, abacate e saladas variadas'
+      },
+      dourada: {
+        title: 'Dourada à plancha com banana',
+        description: 'Filete grelhado servido com banana caramelizada e arroz basmati.',
+        menuItem: 'Daurada a Plancha',
+        alt: 'Dourada grelhada com molho de banana, arroz e rodelas de banana caramelizada'
+      },
+      pastel: {
+        title: 'Pastel da casa com café',
+        description: 'Pastel de nata artesanal acompanhado por café expresso.',
+        menuItem: 'Espresso + Pastel Nata',
+        alt: 'Dois cafés e pastéis de nata servidos em tabuleiro de madeira'
+      },
+      pastryDisplay: {
+        title: 'Vitrine de pastelaria',
+        description: 'Seleção diária de tartes, éclairs, macarons e outras especialidades francesas.',
+        alt: 'Montra refrigerada cheia de macarons, tartes de fruta, éclairs e bolos franceses'
+      },
+      terrace: {
+        title: 'Esplanada na rua Conselheiro Bivar',
+        description: 'Mesas exteriores com vista para o centro de Faro.',
+        alt: 'Esplanada com mesas e guarda-sóis na rua pedonal em Faro'
+      }
     }
   },
 

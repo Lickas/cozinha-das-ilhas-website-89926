@@ -102,7 +102,7 @@ const Almoco = () => {
         <div className="max-w-7xl mx-auto space-y-16">
           
           {/* Entradas */}
-          <div>
+          <div id="appetizers">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">{t('lunch.appetizers')}</h2>
             <div className="grid md:grid-cols-3 gap-6">
               <Card className="bg-card border-border shadow-elegant hover:shadow-glow transition-all duration-300">
@@ -124,7 +124,7 @@ const Almoco = () => {
           </div>
 
           {/* Pratos Principais */}
-          <div>
+          <div id="mains">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">{t('lunch.mains')}</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="bg-card border-border shadow-elegant hover:shadow-glow transition-all duration-300">
@@ -148,6 +148,12 @@ const Almoco = () => {
                   <CardTitle className="text-xl text-primary">Daurada a Plancha - €15.00</CardTitle>
                 </CardHeader>
                 <CardContent>
+                  <img 
+                    src="/lovable-uploads/2ffd30b9-5693-49d0-9b7c-eecda7e9295c.png"
+                    alt="Dourada grelhada com banana caramelizada e arroz"
+                    className="w-full h-40 object-cover rounded-lg mb-3"
+                    loading="lazy"
+                  />
                   <p className="text-muted-foreground">Servido com batatas fritas, arroz e salada</p>
                 </CardContent>
               </Card>
@@ -163,7 +169,7 @@ const Almoco = () => {
           </div>
 
           {/* Bokit Burgers */}
-          <div>
+          <div id="bokit">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">{t('lunchPage.bokitBurgers')}</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="bg-card border-border shadow-elegant hover:shadow-glow transition-all duration-300">
@@ -202,7 +208,7 @@ const Almoco = () => {
           </div>
 
           {/* Saladas */}
-          <div>
+          <div id="salads">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">{t('lunch.salads')}</h2>
             <div className="grid md:grid-cols-3 gap-6">
               <Card className="bg-card border-border shadow-elegant hover:shadow-glow transition-all duration-300">
@@ -218,6 +224,12 @@ const Almoco = () => {
                   <CardTitle className="text-xl text-primary">Creola - €12.50</CardTitle>
                 </CardHeader>
                 <CardContent>
+                  <img 
+                    src="/lovable-uploads/assiette-creole.jpg"
+                    alt="Salada Créola com acras de bacalhau, legumes frescos e pão de queijo"
+                    className="w-full h-40 object-cover rounded-lg mb-3"
+                    loading="lazy"
+                  />
                   <p className="text-muted-foreground">Bolinhas de bacalhau, batavia, tomate, grão de milho, pepino, cenoura, abacate & molho creoline</p>
                 </CardContent>
               </Card>
@@ -233,11 +245,17 @@ const Almoco = () => {
           </div>
 
           {/* Sobremesas */}
-          <div>
+          <div id="desserts">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">{t('lunchPage.desserts')}</h2>
             <div className="grid md:grid-cols-3 gap-6">
               <Card className="bg-card border-border shadow-elegant hover:shadow-glow transition-all duration-300">
                 <CardContent className="p-6">
+                  <img 
+                    src="/lovable-uploads/7a8d1814-3f62-4a44-bce9-481a257c68e1.png"
+                    alt="Pastel de nata artesanal com café expresso"
+                    className="w-full h-32 object-cover rounded-lg mb-3"
+                    loading="lazy"
+                  />
                   <h3 className="text-lg font-semibold text-primary mb-2">Espresso + Pastel Nata - €2.00</h3>
                 </CardContent>
               </Card>

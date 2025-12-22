@@ -396,20 +396,20 @@ export const fr = {
   gallery: {
     title: 'Galerie',
     subtitle: 'Une sélection de nos plats, du lieu et des moments partagés',
-    description: 'Nous préparons la galerie mise à jour. Dès que nous recevrons les fichiers, nous les organiserons ici et relierons chaque photo de plat à son entrée correspondante dans le menu.',
+    description: 'Les premières photos des plats et de la terrasse sont publiées. D’autres images arrivent bientôt.',
     inProgress: {
-      title: 'Préparation',
-      heading: 'La galerie est prête à accueillir les nouvelles photos',
-      description: 'Nous avons créé cette page pour centraliser toutes les images du restaurant, des plats et des événements.',
-      note: 'Chaque photo de plat sera aussi affichée dans la page du menu concerné.',
-      badge: 'Disponible bientôt'
+      title: 'Mise à jour continue',
+      heading: 'De nouvelles photos arrivent',
+      description: 'Nous avons partagé les premiers plats et vues de la terrasse, et nous continuerons d’en ajouter.',
+      note: 'Chaque photo de plat est liée à son entrée dans le menu.',
+      badge: 'Mises à jour fréquentes'
     },
-    sectionsTitle: 'Ce que vous trouverez ici',
-    sectionsDescription: 'La galerie sera organisée par thème pour naviguer facilement entre les différentes rubriques.',
+    sectionsTitle: 'Ce que vous pouvez explorer',
+    sectionsDescription: 'La galerie est organisée par thème pour trouver rapidement ce qui vous intéresse.',
     sections: {
       restaurant: {
         title: 'Restaurant & Terrasse',
-        description: 'Ambiance de la salle, terrasse et détails de la décoration du lieu.'
+        description: 'Ambiance de la salle, terrasse et détails de la décoration.'
       },
       dishes: {
         title: 'Plats du Menu',
@@ -445,6 +445,48 @@ export const fr = {
       description: 'Envoyez-nous les photos ou vos préférences sur la manière dont elles doivent apparaître dans la galerie et dans le menu.',
       contact: 'Envoyer un message',
       instagram: 'Voir Instagram'
+    },
+    liveSection: {
+      title: 'Premières photos en ligne',
+      description: 'Un aperçu des plats et de la terrasse. Cliquez pour accéder directement au plat dans le menu.',
+      moreComing: 'Davantage d’images arrivent bientôt'
+    },
+    tags: {
+      dishes: 'Plats',
+      pastry: 'Pâtisserie',
+      restaurant: 'Restaurant'
+    },
+    menuLabel: 'Au menu',
+    viewMenuItem: 'Voir le plat dans le menu',
+    photos: {
+      assiette: {
+        title: 'Assiette créole',
+        description: 'Accras de morue, tomate, avocat et salades colorées avec petits pains au fromage.',
+        menuItem: 'Salade Créole',
+        alt: 'Assiette créole avec accras, tomate, avocat et salades variées'
+      },
+      dourada: {
+        title: 'Dorade grillée à la banane',
+        description: 'Filet poêlé servi avec banane caramélisée et riz basmati.',
+        menuItem: 'Daurada a Plancha',
+        alt: 'Dorade grillée avec sauce à la banane, riz et rondelles de banane caramélisée'
+      },
+      pastel: {
+        title: 'Pastel de nata et café',
+        description: 'Pastel de nata maison accompagné d’un expresso.',
+        menuItem: 'Expresso + Pastel Nata',
+        alt: 'Deux expressos et des pastéis de nata servis sur des plateaux en bois'
+      },
+      pastryDisplay: {
+        title: 'Vitrine de pâtisserie',
+        description: 'Sélection quotidienne de tartes, éclairs, macarons et autres spécialités françaises.',
+        alt: 'Vitrine réfrigérée remplie de macarons, tartes aux fruits, éclairs et gâteaux français'
+      },
+      terrace: {
+        title: 'Terrasse Rua Conselheiro Bivar',
+        description: 'Tables extérieures avec vue sur le centre de Faro.',
+        alt: 'Terrasse extérieure avec tables et parasols dans une rue piétonne de Faro'
+      }
     }
   },
 

@@ -5,6 +5,7 @@ export const en = {
     breakfast: 'Breakfast',
     lunch: 'Lunch',
     pastry: 'Pastry',
+    gallery: 'Gallery',
     rooftop: 'Rooftop',
     events: 'Events',
     about: 'About Us',
@@ -394,6 +395,62 @@ export const en = {
     lunch: 'Lunch',
     pastry: 'Pastry',
     drinks: 'Drinks'
+  },
+
+  // Gallery page
+  gallery: {
+    title: 'Gallery',
+    subtitle: 'A curated look at our dishes, space and special moments',
+    description: 'We are preparing the updated gallery. As soon as we receive the files, we will organize them here and link each dish photo to its entry in the menu.',
+    inProgress: {
+      title: 'Preparation',
+      heading: 'The gallery is ready to receive the new photos',
+      description: 'We created this page to centralize every photo of the restaurant, dishes and events.',
+      note: 'Each dish photo will also appear alongside the corresponding menu item.',
+      badge: 'Coming soon'
+    },
+    sectionsTitle: 'What you will find here',
+    sectionsDescription: 'The gallery will be organized by theme so you can explore each area with ease.',
+    sections: {
+      restaurant: {
+        title: 'Restaurant & Terrace',
+        description: 'Atmosphere of the dining room, terrace and the décor details of the space.'
+      },
+      dishes: {
+        title: 'Menu Dishes',
+        description: 'Photography of our main dishes with links to the matching menu items.'
+      },
+      pastry: {
+        title: 'Pastry',
+        description: 'Cakes, desserts and artisanal viennoiseries straight from our oven.'
+      },
+      events: {
+        title: 'Moments & Events',
+        description: 'Highlights from private events, tastings and celebrations hosted with us.'
+      }
+    },
+    workflowTitle: 'Next steps',
+    workflowDescription: 'A clear process to receive, organize and publish the photos.',
+    workflow: {
+      collect: {
+        title: 'Receive the photos',
+        description: 'Share the files and, if possible, the captions or dish names that go with each image.'
+      },
+      organize: {
+        title: 'Organize and describe',
+        description: 'We will publish the images in the gallery with clear descriptions for every section.'
+      },
+      linkMenu: {
+        title: 'Attach to the menu',
+        description: 'For each dish, we will add the matching photo to the relevant menu page.'
+      }
+    },
+    cta: {
+      title: 'Want to send details ahead of time?',
+      description: 'Share the photos or guidance on how you would like them to appear in the gallery and in the menu.',
+      contact: 'Send a message',
+      instagram: 'View Instagram'
+    }
   },
 
   // Footer

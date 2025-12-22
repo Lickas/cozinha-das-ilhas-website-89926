@@ -6,6 +6,7 @@ export const pt = {
     breakfast: 'Pequeno Almoço',
     lunch: 'Almoço', 
     pastry: 'Pastelaria',
+    gallery: 'Galeria',
     rooftop: 'Rooftop',
     events: 'Eventos',
     about: 'Sobre Nós',
@@ -216,6 +217,62 @@ lunch: {
     lunch: 'Almoço',
     pastry: 'Pastelaria',
     drinks: 'Bebidas'
+  },
+
+  // Gallery page
+  gallery: {
+    title: 'Galeria',
+    subtitle: 'Uma seleção de momentos, pratos e detalhes do nosso espaço',
+    description: 'Estamos a preparar a nova galeria com as fotografias atualizadas. Assim que enviarmos os ficheiros, iremos organizá-los aqui e associá-los aos pratos correspondentes no menu.',
+    inProgress: {
+      title: 'Preparação',
+      heading: 'A galeria está pronta para receber as novas fotos',
+      description: 'Criámos esta página para centralizar todas as imagens do restaurante, pratos e eventos.',
+      note: 'Cada foto de prato será também ligada ao respetivo item do menu.',
+      badge: 'Brevemente disponível'
+    },
+    sectionsTitle: 'O que vai encontrar aqui',
+    sectionsDescription: 'A galeria será organizada por tema para facilitar a navegação e encontrar rapidamente o que procura.',
+    sections: {
+      restaurant: {
+        title: 'Restaurante & Terraço',
+        description: 'Ambiente da sala, esplanada e detalhes de decoração do espaço.'
+      },
+      dishes: {
+        title: 'Pratos do Menu',
+        description: 'Fotografias dos pratos principais com a indicação correspondente no menu.'
+      },
+      pastry: {
+        title: 'Pastelaria',
+        description: 'Doces, bolos e viennoiseries artesanais saídos do nosso forno.'
+      },
+      events: {
+        title: 'Momentos & Eventos',
+        description: 'Registos de eventos privados, degustações e celebrações no restaurante.'
+      }
+    },
+    workflowTitle: 'Próximos passos',
+    workflowDescription: 'Processo preparado para receber, organizar e publicar as fotografias.',
+    workflow: {
+      collect: {
+        title: 'Receber as fotos',
+        description: 'Partilhe connosco os ficheiros e, se possível, as legendas ou nomes dos pratos correspondentes.'
+      },
+      organize: {
+        title: 'Organizar e descrever',
+        description: 'Iremos publicar as imagens na galeria com descrições claras para cada secção.'
+      },
+      linkMenu: {
+        title: 'Associar ao menu',
+        description: 'Para cada prato, adicionaremos a foto no menu correspondente para uma experiência completa.'
+      }
+    },
+    cta: {
+      title: 'Quer adiantar algum detalhe?',
+      description: 'Envie-nos as fotos ou indicações de como gostaria que aparecessem na galeria e no menu.',
+      contact: 'Contactar agora',
+      instagram: 'Ver Instagram'
+    }
   },
 
   // Footer

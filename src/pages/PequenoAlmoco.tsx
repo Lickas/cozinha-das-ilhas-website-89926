@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Coffee, Croissant, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { MenuItem } from "@/components/MenuItem";
 
 const PequenoAlmoco = () => {
   const { t } = useLanguage();

@@ -19,6 +19,7 @@ import Almoco from "./pages/Almoco";
 import Pastelaria from "./pages/Pastelaria";
 import MenuCompleto from "./pages/MenuCompleto";
 import NotFound from "./pages/NotFound";
+import Galeria from "./pages/Galeria";
 
 const queryClient = new QueryClient();
 
@@ -55,6 +56,7 @@ const App = () => (
               <Route path="/pastelaria" element={<Pastelaria />} />
               <Route path="/menu-completo" element={<MenuCompleto />} />
               <Route path="*" element={<NotFound />} />
+              <Route path="/galeria" element={<Galeria />} />
               </Routes>
             </main>
             <Footer />

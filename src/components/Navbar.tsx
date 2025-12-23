@@ -56,6 +56,10 @@ const Navbar = () => {
             <Link to="/sobre-nos" className="font-medium text-white hover:text-primary hover:bg-primary/10 px-3 py-2 rounded-lg transition-all">
               {t('nav.about')}
             </Link>
+
+            <Link to="/galeria" className="font-medium text-white hover:text-primary hover:bg-primary/10 px-3 py-2 rounded-lg transition-all">
+  {t('nav.gallery') || 'Galeria'}
+</Link>
             
             <Link to="/rooftop" className="font-medium text-white hover:text-primary hover:bg-primary/10 px-3 py-2 rounded-lg transition-all">
               {t('nav.rooftop')}
@@ -161,6 +165,10 @@ const Navbar = () => {
               >
                 {t('nav.about')}
               </Link>
+
+              <Link to="/galeria" className="block px-4 py-2 text-white hover:text-primary transition-colors" onClick={() => setIsOpen(false)}>
+  {t('nav.gallery') || 'Galeria'}
+</Link>
               
               <Link 
                 to="/rooftop" 

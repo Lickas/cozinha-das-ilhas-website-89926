@@ -10,7 +10,19 @@ export const pt = {
     events: 'Eventos',
     about: 'Sobre Nós',
     contact: 'Contactos',
-    fullMenu: 'Menu Completo'
+    fullMenu: 'Menu Completo',
+    gallery: 'Galeria'
+  },
+  
+  gallery: {
+    title: 'A Nossa Galeria',
+    subtitle: 'Um olhar sobre os nossos pratos, o nosso espaço e os nossos momentos especiais.',
+    categories: {
+      all: 'Todos',
+      dishes: 'Pratos',
+      space: 'Espaço',
+      events: 'Eventos'
+    }
   },
 
   // Home page

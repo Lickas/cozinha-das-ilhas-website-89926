@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import ReservationForm from "@/components/ReservationForm";
 import SEOHead from "@/components/SEOHead";
 import { restaurantStructuredData } from "@/data/structuredData";
-import restaurantInterior from "/lovable-uploads/19b7c887-a360-4ec3-84d9-8cb89fa680d5.png";
+import restaurantInterior from "/images/menu/interior2.jpg";
 import { useScrollAnimation, useStaggeredScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -315,11 +315,11 @@ const Home = () => {
             <Card className="overflow-hidden shadow-tropical-strong hover:shadow-tropical transition-shadow group">
               <div 
                 className="h-64 bg-cover bg-center relative"
-                style={{ backgroundImage: "url('/lovable-uploads/assiette-creole.jpg')" }}
+                style={{ backgroundImage: "url('/images/menu/saladacreola.jpeg')" }}
               >
                 <div className="absolute inset-0 bg-primary/20"></div>
                 <img 
-                  src="/lovable-uploads/assiette-creole.jpg" 
+                  src="/images/menu/saladacreola.jpeg" 
                   alt="Prato típico da Martinica - gastronomia caribenha com especiarias tropicais e ingredientes frescos"
                   className="sr-only"
                 />
@@ -359,11 +359,11 @@ const Home = () => {
             <Card className="overflow-hidden shadow-tropical-strong hover:shadow-tropical transition-shadow group">
               <div 
                 className="h-64 bg-cover bg-center relative"
-                style={{ backgroundImage: "url('/lovable-uploads/9a550b9b-b93c-4e88-98b1-ad72439cc276.png')" }}
+                style={{ backgroundImage: "url('/images/menu/Babacomrumechantilly.jpg')" }}
               >
                 <div className="absolute inset-0 bg-secondary/20"></div>
                 <img 
-                  src="/lovable-uploads/9a550b9b-b93c-4e88-98b1-ad72439cc276.png" 
+                  src="/images/menu/Babacomrumechantilly.jpg" 
                   alt="Pastelaria francesa tradicional - doces refinados e técnicas artesanais francesas"
                   className="sr-only"
                 />

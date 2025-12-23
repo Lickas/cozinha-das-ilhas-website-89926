@@ -15,7 +15,7 @@ const galleryItems = [
     id: 1, 
     name: "A Nossa Equipa", 
     category: "team", 
-    src: "public/images/menu/equipa.jpg", 
+    src: "images/menu/equipa.jpg", 
     alt: "A equipa fantástica do Cozinha das Ilhas" 
   },
 
@@ -24,21 +24,21 @@ const galleryItems = [
     id: 2, 
     name: "Interior do Restaurante", 
     category: "space", 
-    src: "public/images/menu/interior1.jpg", 
+    src: "images/menu/interior1.jpg", 
     alt: "Ambiente acolhedor da sala principal" 
   },
   { 
     id: 3, 
     name: "Sala de Jantar", 
     category: "space", 
-    src: "public/images/menu/interior2.jpg", 
+    src: "images/menu/interior2.jpg", 
     alt: "A nossa sala de jantar" 
   },
   { 
     id: 4, 
     name: "Espaço Exterior", 
     category: "space", 
-    src: "public/images/menu/espacoexterior.jpg", 
+    src: "images/menu/espacoexterior.jpg", 
     alt: "A nossa esplanada convidativa" 
   },
 
@@ -47,35 +47,35 @@ const galleryItems = [
     id: 5, 
     name: "Espetada de Frango Cajun", 
     category: "dishes", 
-    src: "public/images/menu/espetada de frango com batatas doces receita Cajun.jpg", 
+    src: "images/menu/espetada de frango com batatas doces receita Cajun.jpg", 
     alt: "Espetada de frango com batatas doces receita Cajun" 
   },
   { 
     id: 6, 
     name: "Espetada de Camarão", 
     category: "dishes", 
-    src: "public/images/menu/espetadadecamarochouriçocomarrozsalteadocomlegumes.jpg", 
+    src: "images/menu/espetadadecamarochouriçocomarrozsalteadocomlegumes.jpg", 
     alt: "Espetada de camarão e chouriço com arroz salteado" 
   },
   { 
     id: 7, 
     name: "Bokit de Frango", 
     category: "dishes", 
-    src: "public/images/menu/Bokitefrangocombatatasdoces.jpeg", 
+    src: "images/menu/Bokitefrangocombatatasdoces.jpeg", 
     alt: "Bokit e frango com batatas doces" 
   },
   { 
     id: 8, 
     name: "Omelete Mista", 
     category: "dishes", 
-    src: "public/images/menu/omelettecombatatasfritasesaladamista.jpg", 
+    src: "images/menu/omelettecombatatasfritasesaladamista.jpg", 
     alt: "Omelete com batatas fritas e salada mista" 
   },
   { 
     id: 9, 
     name: "Salada Creola", 
     category: "dishes", 
-    src: "public/images/menu/saladacreola.jpeg", 
+    src: "images/menu/saladacreola.jpeg", 
     alt: "Salada fresca e colorida" 
   },
 
@@ -84,21 +84,21 @@ const galleryItems = [
     id: 10, 
     name: "Religieuse", 
     category: "pastry", 
-    src: "public/images/menu/religieuse.jpg", 
+    src: "images/menu/religieuse.jpg", 
     alt: "Clássico da pastelaria francesa" 
   },
   { 
     id: 11, 
     name: "Tarte de Morangos", 
     category: "pastry", 
-    src: "public/images/menu/tartedemorangos.jpg", 
+    src: "images/menu/tartedemorangos.jpg", 
     alt: "Tartelette de morangos frescos" 
   },
   { 
     id: 12, 
     name: "Baba au Rum", 
     category: "pastry", 
-    src: "public/images/menu/Babacomrumechantilly.jpg", 
+    src: "images/menu/Babacomrumechantilly.jpg", 
     alt: "Baba com rum e chantilly" 
   },
 
@@ -107,28 +107,28 @@ const galleryItems = [
     id: 13, 
     name: "English Breakfast", 
     category: "breakfast", 
-    src: "public/images/menu/Englishbreakfast.jpg", 
+    src: "images/menu/Englishbreakfast.jpg", 
     alt: "Pequeno almoço completo inglês" 
   },
   { 
     id: 14, 
     name: "Viennoiseries", 
     category: "breakfast", 
-    src: "public/images/menu/capuccinoetviennoiseries.jpg", 
+    src: "images/menu/capuccinoetviennoiseries.jpg", 
     alt: "Cappuccino e pastelaria folhada" 
   },
   { 
     id: 15, 
     name: "Crepes com Frutos", 
     category: "breakfast", 
-    src: "public/images/menu/crepecomfrutosechantilly.jpg", 
+    src: "images/menu/crepecomfrutosechantilly.jpg", 
     alt: "Crepe delicioso com frutos e chantilly" 
   },
   { 
     id: 16, 
     name: "Iogurte com Muesli", 
     category: "breakfast", 
-    src: "public/images/menu/yogurtmueslifrutosetmel.jpg", 
+    src: "images/menu/yogurtmueslifrutosetmel.jpg", 
     alt: "Iogurte, muesli, frutos e mel" 
   },
 ];
@@ -161,7 +161,7 @@ const Galeria = () => {
           {/* Fundo do Hero usa uma das fotos do interior */}
           <div 
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url('public/images/menu/interior1.jpg')` }} 
+            style={{ backgroundImage: `url('images/menu/interior1.jpg')` }} 
           />
           <div className="absolute inset-0 bg-black/60" /> 
           
